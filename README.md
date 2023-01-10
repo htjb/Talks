@@ -2,7 +2,7 @@
 
 10. Astrophysics from the SARAS3 non- detection of the global 21-cm signal
     - [5th Global 21-cm workshop](https://global21cmworkshop.org/2022-berkeley/)
-    - [PDF](https://github.com/htjb/Talks/blob/master/Talks/5th\ Global\ 21-cm\ Workshop_October_2022/day2_bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/blob/master/Talks/5th%20Global%2021-cm%20Workshop_October_2022/day2_bevins.pdf)
     - October 2022
 
 9. Marginal Bayesian Statistics with Masked Autoregressive Flows and Kernel Density Estimators
