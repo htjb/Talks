@@ -1,6 +1,10 @@
 # Talks
 
-10. Astrophysics from the SARAS3 non- detection of the global 21-cm signal
+11. Machine Learning for 21-cm Cosmology
+    - [PDF](https://github.com/htjb/Talks/blob/master/Talks/DARA_REACH_Workshop/DARA_Workshop.pdf)
+    - February 2023
+
+10. Astrophysics from the SARAS3 non-detection of the global 21-cm signal
     - [5th Global 21-cm workshop](https://global21cmworkshop.org/2022-berkeley/)
     - [PDF](https://github.com/htjb/Talks/blob/master/Talks/5th%20Global%2021-cm%20Workshop_October_2022/day2_bevins.pdf)
     - October 2022
