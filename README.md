@@ -1,6 +1,12 @@
 # Talks
 
+12. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
+    - [A Multi-Scale View of the Epoch of Reionization, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation)
+    - [PDF](https://github.com/htjb/Talks/blob/master/Talks/KICC_EoR/Bevins_KICC_EoR.pdf)
+    - May 2023
+
 11. Machine Learning for 21-cm Cosmology
+    - DARA REACH workshop
     - [PDF](https://github.com/htjb/Talks/blob/master/Talks/DARA_REACH_Workshop/DARA_Workshop.pdf)
     - February 2023
 
