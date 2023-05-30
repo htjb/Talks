@@ -1,5 +1,10 @@
 # Talks
 
+13. Utilizing Normalizing Flows in our Bayesian Workflows.
+    - [Astrostatistics and Astro-ML, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
+    - [PDF](https://github.com/htjb/Talks/blob/master/Talks/KICC_Astrostats/AstroStats_Bevins.pdf)
+    - May 2023
+
 12. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
     - [A Multi-Scale View of the Epoch of Reionization, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation)
     - [PDF](https://github.com/htjb/Talks/blob/master/Talks/KICC_EoR/Bevins_KICC_EoR.pdf)
