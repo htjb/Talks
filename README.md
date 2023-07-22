@@ -2,7 +2,7 @@
 
 1. Utilizing Normalizing Flows in our Bayesian Workflows.
     - [Astrostatistics and Astro-ML, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
-    - [PDF](https://github.com/htjb/Talks/raw/Talks/KICC_Astrostats/AstroStats_Bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Astrostats/AstroStats_Bevins.pdf)
     - May 2023
 
 2. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
