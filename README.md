@@ -1,5 +1,15 @@
 # Talks
 
+1. On the Current Constraints on Superconducting Cosmic Strings from 21-cm Cosmology.
+    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023, Sapporo, Japan](https://www.ursi-gass2023.jp/program.html)
+    - On behalf of Thomas Gessey-Jones
+    - August 2023
+
+1. Joint analysis constraints on the physics of the first galaxies.
+    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023, Sapporo, Japan](https://www.ursi-gass2023.jp/program.html)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/URSI_2023/joint_analysis_margarine.pdf)
+    - August 2023
+
 1. Utilizing Normalizing Flows in our Bayesian Workflows.
     - [Astrostatistics and Astro-ML, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Astrostats/AstroStats_Bevins.pdf)
