@@ -2,7 +2,7 @@
 
 1. Joint analysis constraints from 21-cm probes with normalizing flows
     - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
-    - [PDF](https://github.com/htjb/Talks/tree/master/Talks/REACH_Malta/joint_analysis_margarine.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/REACH_Malta/joint_analysis_margarine.pdf)
     - September 2023
 
 2. REACH Calibration Software Update
