@@ -1,5 +1,14 @@
 # Talks
 
+1. Joint analysis constraints from 21-cm probes with normalizing flows
+    - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
+    - [PDF](https://github.com/htjb/Talks/tree/master/Talks/REACH_Malta/joint_analysis_margarine.pdf)
+    - September 2023
+
+2. REACH Calibration Software Update
+    - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
+    - September 2023
+
 1. On the Current Constraints on Superconducting Cosmic Strings from 21-cm Cosmology.
     - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023, Sapporo, Japan](https://www.ursi-gass2023.jp/program.html)
     - On behalf of Thomas Gessey-Jones
