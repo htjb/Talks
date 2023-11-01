@@ -1,5 +1,10 @@
 # Talks
 
+1. Novel Statistical Methods and 21-cm Cosmology
+    - [KICC Intro 2023](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2023)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Intro_23/kicc_intro_23.pdf)
+    - October 2023
+
 1. Joint analysis constraints from 21-cm probes with normalizing flows
     - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/REACH_Malta/joint_analysis_margarine.pdf)
