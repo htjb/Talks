@@ -1,5 +1,10 @@
 # Talks
 
+1. Observing the first stars and galaxies
+    - Research Salon, St Edmunds College, Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/St_Edmunds_Research_Salon_Nov_2023/research_salon.pdf)
+    - November 2023
+
 1. Novel Statistical Methods and 21-cm Cosmology
     - [KICC Intro 2023](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2023)
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Intro_23/kicc_intro_23.pdf)
