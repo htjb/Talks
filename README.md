@@ -1,8 +1,8 @@
 # Talks
 
 1. 21cm Cosmology as a probe of the high redshfit universe
-    -[A multi-tracer view of galaxies in the first few billion years](https://ras.ac.uk/events-and-meetings/ras-meetings/multi-tracer-view-galaxies-first-few-billion-years)
-    -[PDF](https://github.com/htjb/Talks/raw/master/Talks/RAS_Multi-tracer_View/21cmCosmo.pdf)
+    - [A multi-tracer view of galaxies in the first few billion years](https://ras.ac.uk/events-and-meetings/ras-meetings/multi-tracer-view-galaxies-first-few-billion-years)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/RAS_Multi-tracer_View/21cmCosmo.pdf)
     - February 2024
 
 1. Observing the first stars and galaxies
