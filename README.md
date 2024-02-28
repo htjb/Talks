@@ -1,7 +1,7 @@
 # Lectures
 
 1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
-    - Mphil Data Intensive Science Minor Module
+    - Mphil Data Intensive Science Minor Module 2024
     - University of Cambridge
     - Lectures:
         - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture\ 15.pptx)
