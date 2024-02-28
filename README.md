@@ -4,8 +4,8 @@
     - Mphil Data Intensive Science Minor Module 2024
     - University of Cambridge
     - Lectures:
-        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture\ 15.pptx)
-        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture\ 16.pptx)
+        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-15.pptx)
+        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-16.pptx)
     - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/mphil-lecture-examples)
 
 # Talks
