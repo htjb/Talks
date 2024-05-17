@@ -10,8 +10,21 @@
 
 # Talks
 
+1. Machine Learning Enhanced Bayesian Workflows for Galaxies
+    - Galaxies Discussion Group, University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Galaxy-discussion-group-May-2024/machine-leanring-bayes-galaxies.pdf)
+    - May 2024
+
+1. Calibrating Tension Statistics with Neural Ratio Estimation
+    - [European AI for Fundamental Physics Conference](https://indico.nikhef.nl/event/4875/)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Amsterdam-EuCAIF-2024/tensions.pdf)
+    - Amsterdam
+    - Contributed 20 minute talk.
+    - April 2024
+
 1. 21cm Cosmology as a probe of the high redshfit universe
     - [A multi-tracer view of galaxies in the first few billion years](https://ras.ac.uk/events-and-meetings/ras-meetings/multi-tracer-view-galaxies-first-few-billion-years)
+    - Royal Astronomical Society, London
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/RAS_Multi-tracer_View/21cmCosmo.pdf)
     - February 2024
 
