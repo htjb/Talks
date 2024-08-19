@@ -10,6 +10,17 @@
 
 # Talks
 
+1. Calibrating Tension Statistics with Neural Ratio Estimation
+    - [XVIth Quark Confinement and Hadron Spectrum](https://indico.cern.ch/event/1293041/)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/cairns_quark_confinement_2024/tensions-bevins.pdf)
+    - Invited talk
+    - August 2024
+
+1. Calibrating Tension Statistics with Neural Ratio Estimation
+    - ML4ASTRO, Catania, Sicily (Remote)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/ML4ASTRO-Tensionnets/tensions.pdf)
+    - July 2024
+
 1. Machine Learning Enhanced Bayesian Workflows for Galaxies
     - Galaxies Discussion Group, University of Cambridge
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Galaxy-discussion-group-May-2024/machine-leanring-bayes-galaxies.pdf)
