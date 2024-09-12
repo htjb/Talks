@@ -10,9 +10,20 @@
 
 # Talks
 
+1. Machine Learning enhanced Bayesian Inference for Cosmology
+    - Seminar talk at University of St Andrews, Scotland
+    - [PDF](https://github.com/htjb/Talks/tree/master/Talks/St-Andrews-Seminar-Sept-2024/standrews.pdf)
+    - September 2024
+
+1. Machine Learning enhanced Bayesian Inference for Cosmology
+    - Seminar talk at University of Queensland, Brisbane, Australia
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/brisbane_davis_group_meeting_2024/brisbane2024.pdf)
+    - August 2024
+
 1. Calibrating Tension Statistics with Neural Ratio Estimation
     - [XVIth Quark Confinement and Hadron Spectrum](https://indico.cern.ch/event/1293041/)
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/cairns_quark_confinement_2024/tensions-bevins.pdf)
+    - Cairns, Australia
     - Invited talk
     - August 2024
 
