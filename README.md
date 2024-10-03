@@ -10,9 +10,15 @@
 
 # Talks
 
+1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
+    - Contributed talk at 7th Global 21cm Workshop
+    - Raman Research Institute, Bengaluru, India
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/7th-Global-Workshop/margarine.pdf)
+    - October 2024
+
 1. Machine Learning enhanced Bayesian Inference for Cosmology
     - Seminar talk at University of St Andrews, Scotland
-    - [PDF](https://github.com/htjb/Talks/tree/master/Talks/St-Andrews-Seminar-Sept-2024/standrews.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/St-Andrews-Seminar-Sept-2024/standrews.pdf)
     - September 2024
 
 1. Machine Learning enhanced Bayesian Inference for Cosmology
