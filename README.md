@@ -10,6 +10,27 @@
 
 # Talks
 
+1. Calibration for 21cm Cosmology
+    - CosmoCube@JPL workshop
+    - Jet Propolsion Laboratory, California, US
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/CosmoCube-JPL-Workshop-2024/calibration-jpl-cosmocube.pdf)
+    - November 2024
+
+1. On the accuracy of posterior recovery with neural network emulators
+    - 21 cm Discussion Group
+    - University of Cambridge, Cambridge, UK
+    -October 2024 
+
+1. REACH Calibration Overview 
+    - REACH Annual General Meeting
+    - Mahabaleshwar, India
+    - October 2024
+
+1. Beam Modelling and Emulation for REACH
+    - REACH Annual General Meeting
+    - Mahabaleshwar, India
+    - October 2024
+
 1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
     - Contributed talk at 7th Global 21cm Workshop
     - Raman Research Institute, Bengaluru, India
