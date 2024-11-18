@@ -19,7 +19,8 @@
 1. On the accuracy of posterior recovery with neural network emulators
     - 21 cm Discussion Group
     - University of Cambridge, Cambridge, UK
-    -October 2024 
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/21cm-Meeting-14OCT24/posterior-validation.pdf)
+    - October 2024 
 
 1. REACH Calibration Overview 
     - REACH Annual General Meeting
