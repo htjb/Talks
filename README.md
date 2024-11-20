@@ -10,6 +10,14 @@
 
 # Talks
 
+1. On the accuracy of posterior recovery with neural network emulators
+    - Cosmological Inference in High Dimensions
+    - Kavli Science Focus Meeting
+    - Univeristy of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Kavli-high-dimensional-analysis-20NOV24/posterior-validation.pdf)
+    - November 2024
+
+
 1. Calibration for 21cm Cosmology
     - CosmoCube@JPL workshop
     - Jet Propolsion Laboratory, California, US
