@@ -10,6 +10,36 @@
 
 # Talks
 
+1. Constraining the stochasticity of star formation
+    - [The Future of SED Fitting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting)
+    - University of Cambridge
+    - [PDF]()
+    - July 2025
+
+1. On the accuracy of posterior recovery with neural network emulators
+    - [European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS_meeting/session.jsp?id=S15)
+    - Cork, Ireland
+    - [PDF]()
+    - June 2025
+
+1. On the accuracy of posterior recovery with neural network emulators
+    - [European AI for Fundamental Physics Conference](https://agenda.infn.it/event/43565/)
+    - Cagliari, Sardinia
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/eucaif2025/posterior-validation.pdf)
+    - June 2025
+
+1. Constraining the stochasticity of star formation across galaxy populations with simulation based inference
+    - [SBI for Galaxies](https://sbi-galev.github.io/2025/)
+    - University of Bristol
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/SBIforGalaxies-UoB-2025/stars-bevins.pdf)
+    - May 2025
+
+1. 21cm Cosmology and the PopIII IMF
+    - Extragalactic Group Cambridge
+    - Univerisity of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Galaxies_discussion_group_IMF_21cm_April25/galaxies_discussion_IMF_21cm_April25.pdf)
+    - April 2025
+
 1. On the accuracy of posterior recovery with neural network emulators
     - Cosmological Inference in High Dimensions
     - Kavli Science Focus Meeting
