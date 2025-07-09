@@ -20,7 +20,7 @@
 1. 21-cm Cosmology and REACH
     - UC Louvain
     - Louvain La Neuve
-    - [PDF]()
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/UCLouvainSeminar/21cmIntro.pdf)
     - July 2025
 
 1. Machine Learning the Infant Universe
