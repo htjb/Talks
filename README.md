@@ -10,8 +10,20 @@
 
 # Talks
 
+
 1. Constraining the stochasticity of star formation
     - [The Future of SED Fitting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting)
+    - University of Cambridge
+    - [PDF]()
+    - July 2025
+
+1. 21-cm Cosmology and REACH
+    - UC Louvain
+    - Louvain La Neuve
+    - [PDF]()
+    - July 2025
+
+1. Machine Learning the Infant Universe
     - University of Cambridge
     - [PDF]()
     - July 2025
