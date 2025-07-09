@@ -31,7 +31,7 @@
 1. On the accuracy of posterior recovery with neural network emulators
     - [European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS_meeting/session.jsp?id=S15)
     - Cork, Ireland
-    - [PDF]()
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/EAS2025/posterior-validation.pdf)
     - June 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
