@@ -1,5 +1,11 @@
 # Lectures
 
+1. Hamilton's Principle
+    - Teaching Lecture for Faculty Job at Cavendish Physics University of Cambridge
+    - Additional material includes lecture notes, problem sheet and python notebooks
+    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/Hamiltons-Principle/Lecture.pdf)
+    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
+
 1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
     - Mphil Data Intensive Science Minor Module 2024 and 2025
     - University of Cambridge
@@ -14,7 +20,7 @@
 1. Constraining the stochasticity of star formation
     - [The Future of SED Fitting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting)
     - University of Cambridge
-    - [PDF]()
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Future-SED-Modelling-Cambridge-2025/stars.pdf)
     - July 2025
 
 1. 21-cm Cosmology and REACH
@@ -24,7 +30,8 @@
     - July 2025
 
 1. Machine Learning the Infant Universe
-    - University of Cambridge
+    - Cavendish Physics, University of Cambridge
+    - Faculty Job Talk
     - [PDF]()
     - July 2025
 
