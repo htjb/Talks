@@ -32,7 +32,7 @@
 1. Machine Learning the Infant Universe
     - Cavendish Physics, University of Cambridge
     - Faculty Job Talk
-    - [PDF]()
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Research-Seminar-UoC-2025/Research-seminar-bevins.pdf)
     - July 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
