@@ -16,6 +16,11 @@
 
 # Talks
 
+1. On the accuracy of posterior recovery with neural networks
+    - [Global 21-cm Workshops](https://sites.google.com/asu.edu/8g21cmworkshop)
+    - Caltech
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/global-workshop-2025/bevins-posterior-recovery.pdf)
+    - September 2025
 
 1. Constraining the stochasticity of star formation
     - [The Future of SED Fitting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting)
