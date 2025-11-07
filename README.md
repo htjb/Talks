@@ -16,6 +16,18 @@
 
 # Talks
 
+1. On the accuracy of posterior recovery with neural network emulators
+    - Modern Numerics for Theoretical Physics Seminar Series
+    - Institute for Theoretical Physics, Heidelberg
+    - Invited
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Heidelberg-Oct-2025/posterior-recovery.pdf)
+    - October 2025
+     
+1. Machine Learning the Infant Universe
+    - [Introduction to KICC 2025](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2025)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/kavli-intro-2025/kavli-intro-slides.pdf)
+    - October 2025
+
 1. On the accuracy of posterior recovery with neural networks
     - [Global 21-cm Workshops](https://sites.google.com/asu.edu/8g21cmworkshop)
     - Caltech
