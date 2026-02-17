@@ -16,6 +16,13 @@
 
 # Talks
 
+1. Machine Learning the Infant Universe
+    - Jodrell Bank Center for Astrophysics Colloquium
+    - University of Manchester, Manchester
+    - Invited
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Manchester-Seminar-Talk-2026-Feb/Research-seminar-bevins.pdf)
+    - February 2026
+
 1. On the accuracy of posterior recovery with neural network emulators
     - Modern Numerics for Theoretical Physics Seminar Series
     - Institute for Theoretical Physics, Heidelberg
