@@ -1,0 +1,7 @@
+type: talk
+date: "2024-11"
+event: "CosmoCube@JPL Workshop"
+location: "Jet Propulsion Laboratory, California, US"
+talks:
+  - title: "Calibration for 21cm Cosmology"
+    pdf: "calibration-jpl-cosmocube.pdf"

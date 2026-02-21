@@ -1,0 +1,8 @@
+type: poster
+date: "2019-12"
+event: "Science at Low Frequencies VI"
+event_url: "https://salfconference.org"
+location: "Arizona State University"
+talks:
+  - title: "REACH: Radio Experiment for the Analysis of Cosmic Hydrogen"
+    pdf: "REACH_poster_Harry_Bevins.pdf"

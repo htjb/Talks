@@ -1,0 +1,10 @@
+type: talk
+date: "2023-08"
+event: "21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023"
+event_url: "https://www.ursi-gass2023.jp/program.html"
+location: "Sapporo, Japan"
+talks:
+  - title: "Joint analysis constraints on the physics of the first galaxies"
+    pdf: "joint_analysis_margarine.pdf"
+  - title: "On the Current Constraints on Superconducting Cosmic Strings from 21-cm Cosmology"
+    notes: "Presented on behalf of Thomas Gessey-Jones"

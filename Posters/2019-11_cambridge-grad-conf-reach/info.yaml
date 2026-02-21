@@ -1,0 +1,7 @@
+type: poster
+date: "2019-11"
+event: "Cavendish Graduate Conference"
+location: "University of Cambridge"
+talks:
+  - title: "REACH: Radio Experiment for the Analysis of Cosmic Hydrogen"
+    pdf: "REACH_poster.pdf"

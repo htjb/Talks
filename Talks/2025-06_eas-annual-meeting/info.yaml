@@ -1,0 +1,8 @@
+type: talk
+date: "2025-06"
+event: "European Astronomical Society Annual Meeting"
+event_url: "https://eas.unige.ch/EAS_meeting/session.jsp?id=S15"
+location: "Cork, Ireland"
+talks:
+  - title: "On the accuracy of posterior recovery with neural network emulators"
+    pdf: "posterior-validation.pdf"

@@ -1,0 +1,11 @@
+type: talk
+date: "2021-12"
+event: "Science at Low Frequencies VIII"
+event_url: "https://salfconference.org"
+location: "University of Amsterdam (Online)"
+talks:
+  - title: "A Bayesian re-analysis of the sky-averaged 21-cm experimental data from SARAS2"
+    links:
+      - label: "YouTube"
+        url: "https://www.youtube.com/watch?v=93KCp7rHcGA&list=PLZL7YmXBBHPDCyNfJcWwP78GgacY_Og4E&index=24"
+    notes: "Lightning Talk"

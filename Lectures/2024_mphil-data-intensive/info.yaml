@@ -1,0 +1,13 @@
+type: lecture
+date: "2024"
+event: "MPhil Data Intensive Science Minor Module"
+location: "University of Cambridge"
+talks:
+  - title: "Data Driven Radio Astronomy in the SKA era (2 Lectures)"
+    notes: "Minor Module 2024 and 2025"
+    sub_files:
+      - label: "Signal Emulation for Astrophysics and Cosmology"
+        file: "Lecture-15.pptx"
+      - label: "Simulation Based Inference for Astrophysics and Cosmology"
+        file: "Lecture-16.pptx"
+    code_dir: "mphil-lecture-examples"

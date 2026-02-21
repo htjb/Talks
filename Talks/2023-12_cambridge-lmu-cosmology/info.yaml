@@ -1,0 +1,7 @@
+type: talk
+date: "2023-12"
+event: "Cambridge-LMU Cosmology Meeting"
+location: "Max Planck Institute for Extraterrestrial Physics"
+talks:
+  - title: "Forward Modelling in 21-cm Cosmology"
+    pdf: "Cambridge-LMU.pdf"

@@ -1,0 +1,7 @@
+type: talk
+date: "2023-10"
+event: "KICC Intro 2023"
+event_url: "https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2023"
+talks:
+  - title: "Novel Statistical Methods and 21-cm Cosmology"
+    pdf: "kicc_intro_23.pdf"

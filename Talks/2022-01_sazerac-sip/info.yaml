@@ -1,0 +1,10 @@
+type: talk
+date: "2022-01"
+event: "SAZERAC-SIP: Learning the high-redshift universe"
+event_url: "http://sazerac-conference.org/SIPS2122/3.html"
+notes: "Online"
+talks:
+  - title: "globalemu: A novel and robust approach to emulating the global 21-cm signal with neural networks"
+    links:
+      - label: "YouTube"
+        url: "https://www.youtube.com/watch?v=BFwia93NuAc&list=PLp95u5tgS_YUkFaLATBQpLajJzO5ljN5u&index=7"
