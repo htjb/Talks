@@ -1,0 +1,8 @@
+type: talk
+date: "2022-07"
+event: "41st MaxEnt22 Conference"
+event_url: "https://maxent22.see.asso.fr"
+location: "Institut Henri Poincaré, Paris"
+talks:
+  - title: "Marginal Bayesian Statistics with Masked Autoregressive Flows and Kernel Density Estimators"
+    pdf: "MaxEnt_slides.pdf"

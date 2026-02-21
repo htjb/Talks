@@ -1,0 +1,8 @@
+type: talk
+date: "2025-09"
+event: "8th Global 21-cm Workshop"
+event_url: "https://sites.google.com/asu.edu/8g21cmworkshop"
+location: "Caltech"
+talks:
+  - title: "On the accuracy of posterior recovery with neural networks"
+    pdf: "bevins-posterior-recovery.pdf"

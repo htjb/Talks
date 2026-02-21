@@ -1,0 +1,8 @@
+type: talk
+date: "2025-07"
+event: "The Future of SED Fitting"
+event_url: "https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting"
+location: "University of Cambridge"
+talks:
+  - title: "Constraining the stochasticity of star formation"
+    pdf: "stars.pdf"

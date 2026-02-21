@@ -1,0 +1,9 @@
+type: talk
+date: "2023-09"
+event: "REACH Annual Meeting"
+event_url: "https://www.um.edu.mt/events/reachworkshop2023/"
+location: "Malta"
+talks:
+  - title: "Joint analysis constraints from 21-cm probes with normalizing flows"
+    pdf: "joint_analysis_margarine.pdf"
+  - title: "REACH Calibration Software Update"

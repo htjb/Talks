@@ -1,0 +1,6 @@
+type: talk
+date: "2023-02"
+event: "DARA REACH Workshop"
+talks:
+  - title: "Machine Learning for 21-cm Cosmology"
+    pdf: "DARA_Workshop.pdf"

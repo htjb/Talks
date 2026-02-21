@@ -1,0 +1,7 @@
+type: talk
+date: "2025-10"
+event: "Introduction to KICC 2025"
+event_url: "https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2025"
+talks:
+  - title: "Machine Learning the Infant Universe"
+    pdf: "kavli-intro-slides.pdf"

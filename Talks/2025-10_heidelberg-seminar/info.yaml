@@ -1,0 +1,8 @@
+type: talk
+date: "2025-10"
+event: "Modern Numerics for Theoretical Physics Seminar Series"
+location: "Institute for Theoretical Physics, Heidelberg"
+talks:
+  - title: "On the accuracy of posterior recovery with neural network emulators"
+    invited: true
+    pdf: "posterior-recovery.pdf"

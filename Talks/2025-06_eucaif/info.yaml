@@ -1,0 +1,8 @@
+type: talk
+date: "2025-06"
+event: "European AI for Fundamental Physics Conference"
+event_url: "https://agenda.infn.it/event/43565/"
+location: "Cagliari, Sardinia"
+talks:
+  - title: "On the accuracy of posterior recovery with neural network emulators"
+    pdf: "posterior-validation.pdf"

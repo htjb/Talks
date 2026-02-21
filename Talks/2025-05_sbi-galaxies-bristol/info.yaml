@@ -1,0 +1,8 @@
+type: talk
+date: "2025-05"
+event: "SBI for Galaxies"
+event_url: "https://sbi-galev.github.io/2025/"
+location: "University of Bristol"
+talks:
+  - title: "Constraining the stochasticity of star formation across galaxy populations with simulation based inference"
+    pdf: "stars-bevins.pdf"

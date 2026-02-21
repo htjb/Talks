@@ -1,0 +1,6 @@
+type: talk
+date: "2024-05"
+event: "Galaxies Discussion Group, University of Cambridge"
+talks:
+  - title: "Machine Learning Enhanced Bayesian Workflows for Galaxies"
+    pdf: "machine-leanring-bayes-galaxies.pdf"

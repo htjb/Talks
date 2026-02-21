@@ -1,0 +1,8 @@
+type: talk
+date: "2023-05"
+event: "Astrostatistics and Astro-ML, KICC"
+event_url: "https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning"
+location: "University of Cambridge"
+talks:
+  - title: "Utilizing Normalizing Flows in our Bayesian Workflows"
+    pdf: "AstroStats_Bevins.pdf"

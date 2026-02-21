@@ -1,0 +1,7 @@
+type: talk
+date: "2024-09"
+event: "Seminar, University of St Andrews"
+location: "St Andrews, Scotland"
+talks:
+  - title: "Machine Learning enhanced Bayesian Inference for Cosmology"
+    pdf: "standrews.pdf"

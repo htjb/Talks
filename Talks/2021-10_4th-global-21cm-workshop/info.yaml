@@ -1,0 +1,10 @@
+type: talk
+date: "2021-10"
+event: "4th Global 21-cm Workshop"
+event_url: "https://www.colorado.edu/ness/global-21-cm-workshop-info"
+location: "University of Colorado (Online)"
+talks:
+  - title: "globalemu: novel and robust global 21-cm signal emulation"
+    links:
+      - label: "YouTube"
+        url: "https://www.youtube.com/watch?v=862NuVyF33k&list=PLF7c7ri2hrnGlwbn4JLc0PWbncSeARdTP&index=5"

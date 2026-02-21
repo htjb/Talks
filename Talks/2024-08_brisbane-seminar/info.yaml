@@ -1,0 +1,7 @@
+type: talk
+date: "2024-08"
+event: "Davis Group Seminar, University of Queensland"
+location: "Brisbane, Australia"
+talks:
+  - title: "Machine Learning enhanced Bayesian Inference for Cosmology"
+    pdf: "brisbane2024.pdf"

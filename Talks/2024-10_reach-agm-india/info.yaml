@@ -1,0 +1,7 @@
+type: talk
+date: "2024-10"
+event: "REACH Annual General Meeting"
+location: "Mahabaleshwar, India"
+talks:
+  - title: "REACH Calibration Overview"
+  - title: "Beam Modelling and Emulation for REACH"
