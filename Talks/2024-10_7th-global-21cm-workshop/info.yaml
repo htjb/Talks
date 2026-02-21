@@ -1,0 +1,7 @@
+type: talk
+date: "2024-10"
+event: "7th Global 21-cm Workshop"
+location: "Raman Research Institute, Bengaluru, India"
+talks:
+  - title: "Marginal Bayesian Statistics and Post Processing of Bayesian Constraints"
+    pdf: "margarine.pdf"

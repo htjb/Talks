@@ -1,0 +1,9 @@
+type: talk
+date: "2024-08"
+event: "XVIth Quark Confinement and Hadron Spectrum"
+event_url: "https://indico.cern.ch/event/1293041/"
+location: "Cairns, Australia"
+talks:
+  - title: "Calibrating Tension Statistics with Neural Ratio Estimation"
+    invited: true
+    pdf: "tensions-bevins.pdf"

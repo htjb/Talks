@@ -1,0 +1,9 @@
+type: talk
+date: "2024-04"
+event: "European AI for Fundamental Physics Conference"
+event_url: "https://indico.nikhef.nl/event/4875/"
+location: "Amsterdam"
+talks:
+  - title: "Calibrating Tension Statistics with Neural Ratio Estimation"
+    pdf: "tensions.pdf"
+    notes: "Contributed 20 minute talk."

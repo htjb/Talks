@@ -1,0 +1,7 @@
+type: talk
+date: "2024-10"
+event: "21cm Discussion Group"
+location: "University of Cambridge"
+talks:
+  - title: "On the accuracy of posterior recovery with neural network emulators"
+    pdf: "posterior-validation.pdf"

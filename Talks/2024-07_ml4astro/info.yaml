@@ -1,0 +1,7 @@
+type: talk
+date: "2024-07"
+event: "ML4ASTRO"
+location: "Catania, Sicily (Remote)"
+talks:
+  - title: "Calibrating Tension Statistics with Neural Ratio Estimation"
+    pdf: "tensions.pdf"

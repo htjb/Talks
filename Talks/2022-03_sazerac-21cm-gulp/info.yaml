@@ -1,0 +1,7 @@
+type: talk
+date: "2022-03"
+event: "SAZERAC 21-cm Gulp"
+event_url: "http://sazerac-conference.org/21cm_2022/"
+notes: "Online"
+talks:
+  - title: "A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization"

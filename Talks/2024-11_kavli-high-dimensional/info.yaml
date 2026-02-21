@@ -1,0 +1,7 @@
+type: talk
+date: "2024-11"
+event: "Cosmological Inference in High Dimensions, Kavli Science Focus Meeting"
+location: "University of Cambridge"
+talks:
+  - title: "On the accuracy of posterior recovery with neural network emulators"
+    pdf: "posterior-validation.pdf"

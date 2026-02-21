@@ -1,109 +1,115 @@
 # Lectures
 
-1. Hamilton's Principle
-    - Teaching Lecture for Faculty Job at Cavendish Physics University of Cambridge
-    - Additional material includes lecture notes, problem sheet and python notebooks
-    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/Hamiltons-Principle/Lecture.pdf)
-    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
-
 1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
-    - Mphil Data Intensive Science Minor Module 2024 and 2025
+    - Minor Module 2024 and 2025
+    - MPhil Data Intensive Science Minor Module
     - University of Cambridge
     - Lectures:
-        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures/Lecture-15.pptx)
-        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures/Lecture-16.pptx)
-    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/mphil-lecture-examples)
+        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-15.pptx)
+        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-16.pptx)
+    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/2024_mphil-data-intensive/mphil-lecture-examples)
+
+1. Hamilton's Principle
+    - Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks.
+    - Faculty Job Application
+    - Cavendish Physics, University of Cambridge
+    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/hamiltons-principle/Lecture.pdf)
+    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/hamiltons-principle)
 
 # Talks
 
 1. Machine Learning the Infant Universe
-    - Jodrell Bank Center for Astrophysics Colloquium
+    - Jodrell Bank Centre for Astrophysics Colloquium
     - University of Manchester, Manchester
     - Invited
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Manchester-Seminar-Talk-2026-Feb/Research-seminar-bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-02_manchester-seminar/Research-seminar-bevins.pdf)
     - February 2026
 
 1. On the accuracy of posterior recovery with neural network emulators
     - Modern Numerics for Theoretical Physics Seminar Series
     - Institute for Theoretical Physics, Heidelberg
     - Invited
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Heidelberg-Oct-2025/posterior-recovery.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-10_heidelberg-seminar/posterior-recovery.pdf)
     - October 2025
-     
+
 1. Machine Learning the Infant Universe
     - [Introduction to KICC 2025](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2025)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/kavli-intro-2025/kavli-intro-slides.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-10_kavli-intro/kavli-intro-slides.pdf)
     - October 2025
 
 1. On the accuracy of posterior recovery with neural networks
-    - [Global 21-cm Workshops](https://sites.google.com/asu.edu/8g21cmworkshop)
+    - [8th Global 21-cm Workshop](https://sites.google.com/asu.edu/8g21cmworkshop)
     - Caltech
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/global-workshop-2025/bevins-posterior-recovery.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-09_global-21cm-workshop/bevins-posterior-recovery.pdf)
     - September 2025
 
 1. Constraining the stochasticity of star formation
     - [The Future of SED Fitting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/future-sed-fitting)
     - University of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Future-SED-Modelling-Cambridge-2025/stars.pdf)
-    - July 2025
-
-1. 21-cm Cosmology and REACH
-    - UC Louvain
-    - Louvain La Neuve
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/UCLouvainSeminar/21cmIntro.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_future-sed-cambridge/stars.pdf)
     - July 2025
 
 1. Machine Learning the Infant Universe
     - Cavendish Physics, University of Cambridge
     - Faculty Job Talk
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Research-Seminar-UoC-2025/Research-seminar-bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_research-seminar-cambridge/Research-seminar-bevins.pdf)
+    - July 2025
+
+1. 21-cm Cosmology and REACH
+    - UC Louvain Seminar
+    - Louvain-la-Neuve
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_uclouvain-seminar/21cmIntro.pdf)
     - July 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
     - [European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS_meeting/session.jsp?id=S15)
     - Cork, Ireland
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/EAS2025/posterior-validation.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-06_eas-annual-meeting/posterior-validation.pdf)
     - June 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
     - [European AI for Fundamental Physics Conference](https://agenda.infn.it/event/43565/)
     - Cagliari, Sardinia
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/eucaif2025/posterior-validation.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-06_eucaif/posterior-validation.pdf)
     - June 2025
 
 1. Constraining the stochasticity of star formation across galaxy populations with simulation based inference
     - [SBI for Galaxies](https://sbi-galev.github.io/2025/)
     - University of Bristol
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/SBIforGalaxies-UoB-2025/stars-bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-05_sbi-galaxies-bristol/stars-bevins.pdf)
     - May 2025
 
 1. 21cm Cosmology and the PopIII IMF
     - Extragalactic Group Cambridge
-    - Univerisity of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Galaxies_discussion_group_IMF_21cm_April25/galaxies_discussion_IMF_21cm_April25.pdf)
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-04_galaxies-discussion-imf/galaxies_discussion_IMF_21cm_April25.pdf)
     - April 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
-    - Cosmological Inference in High Dimensions
-    - Kavli Science Focus Meeting
-    - Univeristy of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Kavli-high-dimensional-analysis-20NOV24/posterior-validation.pdf)
+    - Cosmological Inference in High Dimensions, Kavli Science Focus Meeting
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-11_kavli-high-dimensional/posterior-validation.pdf)
     - November 2024
-
 
 1. Calibration for 21cm Cosmology
-    - CosmoCube@JPL workshop
-    - Jet Propolsion Laboratory, California, US
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/CosmoCube-JPL-Workshop-2024/calibration-jpl-cosmocube.pdf)
+    - CosmoCube@JPL Workshop
+    - Jet Propulsion Laboratory, California, US
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-11_cosmocube-jpl/calibration-jpl-cosmocube.pdf)
     - November 2024
 
-1. On the accuracy of posterior recovery with neural network emulators
-    - 21 cm Discussion Group
-    - University of Cambridge, Cambridge, UK
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/21cm-Meeting-14OCT24/posterior-validation.pdf)
-    - October 2024 
+1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
+    - 7th Global 21-cm Workshop
+    - Raman Research Institute, Bengaluru, India
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-10_7th-global-21cm-workshop/margarine.pdf)
+    - October 2024
 
-1. REACH Calibration Overview 
+1. On the accuracy of posterior recovery with neural network emulators
+    - 21cm Discussion Group
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-10_21cm-discussion-cambridge/posterior-validation.pdf)
+    - October 2024
+
+1. REACH Calibration Overview
     - REACH Annual General Meeting
     - Mahabaleshwar, India
     - October 2024
@@ -113,159 +119,183 @@
     - Mahabaleshwar, India
     - October 2024
 
-1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
-    - Contributed talk at 7th Global 21cm Workshop
-    - Raman Research Institute, Bengaluru, India
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/7th-Global-Workshop/margarine.pdf)
-    - October 2024
-
 1. Machine Learning enhanced Bayesian Inference for Cosmology
-    - Seminar talk at University of St Andrews, Scotland
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/St-Andrews-Seminar-Sept-2024/standrews.pdf)
+    - Seminar, University of St Andrews
+    - St Andrews, Scotland
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-09_st-andrews-seminar/standrews.pdf)
     - September 2024
 
 1. Machine Learning enhanced Bayesian Inference for Cosmology
-    - Seminar talk at University of Queensland, Brisbane, Australia
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/brisbane_davis_group_meeting_2024/brisbane2024.pdf)
+    - Davis Group Seminar, University of Queensland
+    - Brisbane, Australia
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-08_brisbane-seminar/brisbane2024.pdf)
     - August 2024
 
 1. Calibrating Tension Statistics with Neural Ratio Estimation
     - [XVIth Quark Confinement and Hadron Spectrum](https://indico.cern.ch/event/1293041/)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/cairns_quark_confinement_2024/tensions-bevins.pdf)
     - Cairns, Australia
-    - Invited talk
+    - Invited
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-08_quark-confinement-cairns/tensions-bevins.pdf)
     - August 2024
 
 1. Calibrating Tension Statistics with Neural Ratio Estimation
-    - ML4ASTRO, Catania, Sicily (Remote)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/ML4ASTRO-Tensionnets/tensions.pdf)
+    - ML4ASTRO
+    - Catania, Sicily (Remote)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-07_ml4astro/tensions.pdf)
     - July 2024
 
 1. Machine Learning Enhanced Bayesian Workflows for Galaxies
     - Galaxies Discussion Group, University of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Galaxy-discussion-group-May-2024/machine-leanring-bayes-galaxies.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-05_galaxies-discussion-cambridge/machine-leanring-bayes-galaxies.pdf)
     - May 2024
 
 1. Calibrating Tension Statistics with Neural Ratio Estimation
     - [European AI for Fundamental Physics Conference](https://indico.nikhef.nl/event/4875/)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Amsterdam-EuCAIF-2024/tensions.pdf)
     - Amsterdam
-    - Contributed 20 minute talk.
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-04_eucaif-amsterdam/tensions.pdf)
     - April 2024
+    - Contributed 20 minute talk.
 
-1. 21cm Cosmology as a probe of the high redshfit universe
+1. 21-cm Cosmology as a probe of the high redshift universe
     - [A multi-tracer view of galaxies in the first few billion years](https://ras.ac.uk/events-and-meetings/ras-meetings/multi-tracer-view-galaxies-first-few-billion-years)
     - Royal Astronomical Society, London
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/RAS_Multi-tracer_View/21cmCosmo.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-02_ras-multi-tracer/21cmCosmo.pdf)
     - February 2024
 
+1. Forward Modelling in 21-cm Cosmology
+    - Cambridge-LMU Cosmology Meeting
+    - Max Planck Institute for Extraterrestrial Physics
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-12_cambridge-lmu-cosmology/Cambridge-LMU.pdf)
+    - December 2023
+
 1. Observing the first stars and galaxies
-    - Research Salon, St Edmunds College, Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/St_Edmunds_Research_Salon_Nov_2023/research_salon.pdf)
+    - Research Salon, St Edmunds College
+    - Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-11_st-edmunds-research-salon/research_salon.pdf)
     - November 2023
 
 1. Novel Statistical Methods and 21-cm Cosmology
     - [KICC Intro 2023](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2023)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Intro_23/kicc_intro_23.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-10_kicc-intro/kicc_intro_23.pdf)
     - October 2023
 
 1. Joint analysis constraints from 21-cm probes with normalizing flows
     - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/REACH_Malta/joint_analysis_margarine.pdf)
+    - Malta
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-09_reach-annual-meeting-malta/joint_analysis_margarine.pdf)
     - September 2023
 
-2. REACH Calibration Software Update
+1. REACH Calibration Software Update
     - [REACH Annual Meeting](https://www.um.edu.mt/events/reachworkshop2023/)
+    - Malta
     - September 2023
 
-1. On the Current Constraints on Superconducting Cosmic Strings from 21-cm Cosmology.
-    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023, Sapporo, Japan](https://www.ursi-gass2023.jp/program.html)
-    - On behalf of Thomas Gessey-Jones
+1. Joint analysis constraints on the physics of the first galaxies
+    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023](https://www.ursi-gass2023.jp/program.html)
+    - Sapporo, Japan
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-08_ursi-gass-sapporo/joint_analysis_margarine.pdf)
     - August 2023
 
-1. Joint analysis constraints on the physics of the first galaxies.
-    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023, Sapporo, Japan](https://www.ursi-gass2023.jp/program.html)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/URSI_2023/joint_analysis_margarine.pdf)
+1. On the Current Constraints on Superconducting Cosmic Strings from 21-cm Cosmology
+    - [21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Reionization, URSI GASS 2023](https://www.ursi-gass2023.jp/program.html)
+    - Sapporo, Japan
     - August 2023
+    - Presented on behalf of Thomas Gessey-Jones
 
-1. Utilizing Normalizing Flows in our Bayesian Workflows.
-    - [Astrostatistics and Astro-ML, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_Astrostats/AstroStats_Bevins.pdf)
+1. Utilizing Normalizing Flows in our Bayesian Workflows
+    - [Astrostatistics and Astro-ML, KICC](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-05_kicc-astrostats/AstroStats_Bevins.pdf)
     - May 2023
 
-2. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
-    - [A Multi-Scale View of the Epoch of Reionization, KICC, University of Cambridge](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/KICC_EoR/Bevins_KICC_EoR.pdf)
+1. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
+    - [A Multi-Scale View of the Epoch of Reionization, KICC](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation)
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-05_kicc-eor/Bevins_KICC_EoR.pdf)
     - May 2023
 
-3. Machine Learning for 21-cm Cosmology
-    - DARA REACH workshop
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/DARA_REACH_Workshop/DARA_Workshop.pdf)
+1. Machine Learning for 21-cm Cosmology
+    - DARA REACH Workshop
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-02_dara-reach-workshop/DARA_Workshop.pdf)
     - February 2023
 
-4. Astrophysics from the SARAS3 non-detection of the global 21-cm signal
-    - [5th Global 21-cm workshop](https://global21cmworkshop.org/2022-berkeley/)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/5th%20Global%2021-cm%20Workshop_October_2022/day2_bevins.pdf)
+1. Astrophysics from the SARAS3 non-detection of the global 21-cm signal
+    - [5th Global 21-cm Workshop](https://global21cmworkshop.org/2022-berkeley/)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2022-10_5th-global-21cm-workshop/day2_bevins.pdf)
     - October 2022
 
-5. Marginal Bayesian Statistics with Masked Autoregressive Flows and Kernel Density Estimators
-    - [41st MaxEnt22 Conference, Institut Henri Poincare, Paris](https://maxent22.see.asso.fr)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/MaxEnt22_margarine_June_2022/MaxEnt_slides.pdf)
+1. globalemu: Novel and robust emulation of 21-cm signals from the Epoch of Reionization
+    - [Special Session - Towards the SKA Observatory: Artificial Intelligence in Radio Astronomy, European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS2022/program.jsp)
+    - Valencia
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2022-07_eas-globalemu/AUDITORIUM%203A_SS23a_0940_Bevins.pdf)
     - July 2022
 
-6. globalemu: Novel and robust emulation of 21-cm signals from the Epoch of Reionization
-    - [Special Session-Towards the SKA Observatory:Artificial Intelligence in Radio Astronomy, European Astronomical Society Annual Meeting, Valencia](https://eas.unige.ch/EAS2022/program.jsp)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/ESA_globalemu_July_2022/AUDITORIUM%203A_SS23a_0940_Bevins.pdf)
+1. Marginal Bayesian Statistics with Masked Autoregressive Flows and Kernel Density Estimators
+    - [41st MaxEnt22 Conference](https://maxent22.see.asso.fr)
+    - Institut Henri Poincaré, Paris
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2022-07_maxent/MaxEnt_slides.pdf)
     - July 2022
 
-7. Constraining the Astrophysics of the Early Universe using the SARAS Instrumentation
-    - [Observation and Theoretical 21-cm Cosmology, Kavli Meeting, University of Cambridge.](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/observational-and-theoretical-21-cm-cosmology)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/Kavli_Meet_21-cm_SARAS2_April_2022/SARAS2.pdf)
+1. Constraining the Astrophysics of the Early Universe using the SARAS Instrumentation
+    - [Observational and Theoretical 21-cm Cosmology, Kavli Meeting](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/observational-and-theoretical-21-cm-cosmology)
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2022-04_kavli-21cm-saras2/SARAS2.pdf)
     - April 2022
 
-8. A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization
-    - [SAZERAC 21-cm Gulp (Online).](http://sazerac-conference.org/21cm_2022/)
+1. A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization
+    - [SAZERAC 21-cm Gulp](http://sazerac-conference.org/21cm_2022/)
+    - Online
     - March 2022
 
-9. globalemu: A novel and robust approach to emulating the global 21-cm signal with neural networks
-    - [SAZERAC-SIP:Learning the high-redshift universe (Online).](http://sazerac-conference.org/SIPS2122/3.html)
-    - [Youtube](https://www.youtube.com/watch?v=BFwia93NuAc&list=PLp95u5tgS_YUkFaLATBQpLajJzO5ljN5u&index=7)
+1. globalemu: A novel and robust approach to emulating the global 21-cm signal with neural networks
+    - [SAZERAC-SIP: Learning the high-redshift universe](http://sazerac-conference.org/SIPS2122/3.html)
+    - Online
+    - [YouTube](https://www.youtube.com/watch?v=BFwia93NuAc&list=PLp95u5tgS_YUkFaLATBQpLajJzO5ljN5u&index=7)
     - January 2022
 
-10. A Bayesian re-analysis of the sky-averaged 21-cm experimental data from SARAS2
-    - [Lightening Talk, Science at Low Frequencies VIII (Online), University of Amsterdam.](https://salfconference.org)
-    - [Youtube](https://www.youtube.com/watch?v=93KCp7rHcGA&list=PLZL7YmXBBHPDCyNfJcWwP78GgacY_Og4E&index=24)
+1. A Bayesian re-analysis of the sky-averaged 21-cm experimental data from SARAS2
+    - [Science at Low Frequencies VIII](https://salfconference.org)
+    - University of Amsterdam (Online)
+    - [YouTube](https://www.youtube.com/watch?v=93KCp7rHcGA&list=PLZL7YmXBBHPDCyNfJcWwP78GgacY_Og4E&index=24)
     - December 2021
+    - Lightning Talk
 
-11. globalemu: novel and robust global 21-cm signal emulation
-    - [4th Global 21-cm Workshop (Online), University of Colorado.](https://www.colorado.edu/ness/global-21-cm-workshop-info)
-    - [Youtube](https://www.youtube.com/watch?v=862NuVyF33k&list=PLF7c7ri2hrnGlwbn4JLc0PWbncSeARdTP&index=5)
+1. globalemu: novel and robust global 21-cm signal emulation
+    - [4th Global 21-cm Workshop](https://www.colorado.edu/ness/global-21-cm-workshop-info)
+    - University of Colorado (Online)
+    - [YouTube](https://www.youtube.com/watch?v=862NuVyF33k&list=PLF7c7ri2hrnGlwbn4JLc0PWbncSeARdTP&index=5)
     - October 2021
 
-12. maxsmooth and its applications in science at low frequencies
-    - [Lightening Talk, Science at Low Frequencies VII (Online), University of Amsterdam.](https://salfconference.org)
-    - [Youtube](https://www.youtube.com/watch?v=Yw6_IInwTNE)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/SALF_VII_maxsmooth_Dec_2020/SALF_LighteningTalk.pdf)
+1. maxsmooth and its applications in science at low frequencies
+    - [Science at Low Frequencies VII](https://salfconference.org)
+    - University of Amsterdam (Online)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2020-12_salf-vii-maxsmooth/SALF_LighteningTalk.pdf)
+    - [YouTube](https://www.youtube.com/watch?v=Yw6_IInwTNE)
     - December 2020
+    - Lightning Talk
 
-13. maxsmooth and its applications to 21-cm cosmology
-    - [3rd Global 21-cm Workshop (Online), University of Cambridge](https://sites.google.com/view/third21cmglobalworkshop/home)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/3rd_Global_Workshop_maxsmooth_Oct_2020/maxsmooth_3rd_global_workshop.pdf)
+1. maxsmooth and its applications to 21-cm cosmology
+    - [3rd Global 21-cm Workshop](https://sites.google.com/view/third21cmglobalworkshop/home)
+    - University of Cambridge (Online)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2020-10_3rd-global-21cm-workshop/maxsmooth_3rd_global_workshop.pdf)
     - October 2020
 
 # Posters
 
 1. globalemu: A novel and robust approach for emulating the sky averaged 21-cm signal from the cosmic dawn and epoch of reionization
-    - A Precursor View of the SKA Sky, Virtual Conference
-    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/SKA_globalemu_March_2021/globalemu.pdf)
+    - A Precursor View of the SKA Sky
+    - Virtual Conference
+    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/2021-05_ska-globalemu/globalemu.pdf)
     - May 2021
 
-2. REACH: Radio Experiment for the Analysis of Cosmic Hydrogen
-    - [Science at Low Frequencies VI, Arizona State University](https://salfconference.org)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/SALF_VI_REACH_Dec_2019/REACH_poster_Harry_Bevins.pdf)
+1. REACH: Radio Experiment for the Analysis of Cosmic Hydrogen
+    - [Science at Low Frequencies VI](https://salfconference.org)
+    - Arizona State University
+    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/2019-12_salf-vi-reach/REACH_poster_Harry_Bevins.pdf)
     - December 2019
 
-3. REACH: Radio Experiment for the Analysis of Cosmic Hydrogen
-    - Graduate Conference, University of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/Cav_Graduate_Conf_REACH_Nov_2019/REACH_poster.pdf)
+1. REACH: Radio Experiment for the Analysis of Cosmic Hydrogen
+    - Cavendish Graduate Conference
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/2019-11_cambridge-grad-conf-reach/REACH_poster.pdf)
     - November 2019

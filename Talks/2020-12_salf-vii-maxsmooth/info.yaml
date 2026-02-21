@@ -1,0 +1,12 @@
+type: talk
+date: "2020-12"
+event: "Science at Low Frequencies VII"
+event_url: "https://salfconference.org"
+location: "University of Amsterdam (Online)"
+talks:
+  - title: "maxsmooth and its applications in science at low frequencies"
+    pdf: "SALF_LighteningTalk.pdf"
+    links:
+      - label: "YouTube"
+        url: "https://www.youtube.com/watch?v=Yw6_IInwTNE"
+    notes: "Lightning Talk"

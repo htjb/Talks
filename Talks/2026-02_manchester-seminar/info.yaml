@@ -1,0 +1,8 @@
+type: talk
+date: "2026-02"
+event: "Jodrell Bank Centre for Astrophysics Colloquium"
+location: "University of Manchester, Manchester"
+talks:
+  - title: "Machine Learning the Infant Universe"
+    invited: true
+    pdf: "Research-seminar-bevins.pdf"

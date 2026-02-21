@@ -1,0 +1,8 @@
+type: talk
+date: "2023-05"
+event: "A Multi-Scale View of the Epoch of Reionization, KICC"
+event_url: "https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation"
+location: "University of Cambridge"
+talks:
+  - title: "Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data"
+    pdf: "Bevins_KICC_EoR.pdf"

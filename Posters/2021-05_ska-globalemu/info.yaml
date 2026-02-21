@@ -1,0 +1,7 @@
+type: poster
+date: "2021-05"
+event: "A Precursor View of the SKA Sky"
+location: "Virtual Conference"
+talks:
+  - title: "globalemu: A novel and robust approach for emulating the sky averaged 21-cm signal from the cosmic dawn and epoch of reionization"
+    pdf: "globalemu.pdf"

@@ -1,0 +1,8 @@
+type: talk
+date: "2022-07"
+event: "Special Session - Towards the SKA Observatory: Artificial Intelligence in Radio Astronomy, European Astronomical Society Annual Meeting"
+event_url: "https://eas.unige.ch/EAS2022/program.jsp"
+location: "Valencia"
+talks:
+  - title: "globalemu: Novel and robust emulation of 21-cm signals from the Epoch of Reionization"
+    pdf: "AUDITORIUM 3A_SS23a_0940_Bevins.pdf"

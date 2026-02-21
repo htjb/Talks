@@ -1,0 +1,8 @@
+type: lecture
+event: "Faculty Job Application"
+location: "Cavendish Physics, University of Cambridge"
+talks:
+  - title: "Hamilton's Principle"
+    pdf: "Lecture.pdf"
+    additional_material: true
+    notes: "Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks."
