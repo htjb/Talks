@@ -1,0 +1,8 @@
+#!/bin/bash
+# Regenerate README.md from info.yaml files before every commit.
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+python3 "$REPO_ROOT/generate_readme.py"
+git add "$REPO_ROOT/README.md"
