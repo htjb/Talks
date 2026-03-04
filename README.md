@@ -1,21 +1,3 @@
-# Lectures
-
-1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
-    - Minor Module 2024 and 2025
-    - MPhil Data Intensive Science Minor Module
-    - University of Cambridge
-    - Lectures:
-        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-15.pptx)
-        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-16.pptx)
-    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/2024_mphil-data-intensive/mphil-lecture-examples)
-
-1. Hamilton's Principle
-    - Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks.
-    - Faculty Job Application
-    - Cavendish Physics, University of Cambridge
-    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/hamiltons-principle/Lecture.pdf)
-    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/hamiltons-principle)
-
 # Talks
 
 1. Machine Learning the Infant Universe
@@ -25,16 +7,16 @@
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-02_manchester-seminar/Research-seminar-bevins.pdf)
     - February 2026
 
+1. Machine Learning the Infant Universe
+    - [Introduction to KICC 2025](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2025)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-10_kavli-intro/kavli-intro-slides.pdf)
+    - October 2025
+
 1. On the accuracy of posterior recovery with neural network emulators
     - Modern Numerics for Theoretical Physics Seminar Series
     - Institute for Theoretical Physics, Heidelberg
     - Invited
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-10_heidelberg-seminar/posterior-recovery.pdf)
-    - October 2025
-
-1. Machine Learning the Infant Universe
-    - [Introduction to KICC 2025](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/introduction-kicc-2025)
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-10_kavli-intro/kavli-intro-slides.pdf)
     - October 2025
 
 1. On the accuracy of posterior recovery with neural networks
@@ -49,28 +31,28 @@
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_future-sed-cambridge/stars.pdf)
     - July 2025
 
-1. Machine Learning the Infant Universe
-    - Cavendish Physics, University of Cambridge
-    - Faculty Job Talk
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_research-seminar-cambridge/Research-seminar-bevins.pdf)
-    - July 2025
-
 1. 21-cm Cosmology and REACH
     - UC Louvain Seminar
     - Louvain-la-Neuve
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_uclouvain-seminar/21cmIntro.pdf)
     - July 2025
 
-1. On the accuracy of posterior recovery with neural network emulators
-    - [European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS_meeting/session.jsp?id=S15)
-    - Cork, Ireland
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-06_eas-annual-meeting/posterior-validation.pdf)
-    - June 2025
+1. Machine Learning the Infant Universe
+    - Cavendish Physics, University of Cambridge
+    - Faculty Job Talk
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-07_research-seminar-cambridge/Research-seminar-bevins.pdf)
+    - July 2025
 
 1. On the accuracy of posterior recovery with neural network emulators
     - [European AI for Fundamental Physics Conference](https://agenda.infn.it/event/43565/)
     - Cagliari, Sardinia
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-06_eucaif/posterior-validation.pdf)
+    - June 2025
+
+1. On the accuracy of posterior recovery with neural network emulators
+    - [European Astronomical Society Annual Meeting](https://eas.unige.ch/EAS_meeting/session.jsp?id=S15)
+    - Cork, Ireland
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2025-06_eas-annual-meeting/posterior-validation.pdf)
     - June 2025
 
 1. Constraining the stochasticity of star formation across galaxy populations with simulation based inference
@@ -97,12 +79,6 @@
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-11_cosmocube-jpl/calibration-jpl-cosmocube.pdf)
     - November 2024
 
-1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
-    - 7th Global 21-cm Workshop
-    - Raman Research Institute, Bengaluru, India
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-10_7th-global-21cm-workshop/margarine.pdf)
-    - October 2024
-
 1. On the accuracy of posterior recovery with neural network emulators
     - 21cm Discussion Group
     - University of Cambridge
@@ -117,6 +93,12 @@
 1. Beam Modelling and Emulation for REACH
     - REACH Annual General Meeting
     - Mahabaleshwar, India
+    - October 2024
+
+1. Marginal Bayesian Statistics and Post Processing of Bayesian Constraints
+    - 7th Global 21-cm Workshop
+    - Raman Research Institute, Bengaluru, India
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2024-10_7th-global-21cm-workshop/margarine.pdf)
     - October 2024
 
 1. Machine Learning enhanced Bayesian Inference for Cosmology
@@ -202,16 +184,16 @@
     - August 2023
     - Presented on behalf of Thomas Gessey-Jones
 
-1. Utilizing Normalizing Flows in our Bayesian Workflows
-    - [Astrostatistics and Astro-ML, KICC](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
-    - University of Cambridge
-    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-05_kicc-astrostats/AstroStats_Bevins.pdf)
-    - May 2023
-
 1. Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data
     - [A Multi-Scale View of the Epoch of Reionization, KICC](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/multi-scale-view-epoch-reionisation)
     - University of Cambridge
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-05_kicc-eor/Bevins_KICC_EoR.pdf)
+    - May 2023
+
+1. Utilizing Normalizing Flows in our Bayesian Workflows
+    - [Astrostatistics and Astro-ML, KICC](https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/astrostatistics-and-astro-machine-learning)
+    - University of Cambridge
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2023-05_kicc-astrostats/AstroStats_Bevins.pdf)
     - May 2023
 
 1. Machine Learning for 21-cm Cosmology
@@ -279,6 +261,42 @@
     - University of Cambridge (Online)
     - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2020-10_3rd-global-21cm-workshop/maxsmooth_3rd_global_workshop.pdf)
     - October 2020
+
+# Lectures
+
+1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
+    - Minor Module 2026
+    - MPhil Data Intensive Science Minor Module
+    - University of Cambridge
+    - Lectures:
+        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2026_mphil-data-intensive/Lecture-15-2026.pptx)
+        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2026_mphil-data-intensive/Lecture-16-2026.pptx)
+    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/2026_mphil-data-intensive/../mphil-lecture-examples)
+
+1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
+    - Minor Module 2025
+    - MPhil Data Intensive Science Minor Module
+    - University of Cambridge
+    - Lectures:
+        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2025_mphil-data-intensive/Lecture-15.pdf)
+        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2025_mphil-data-intensive/Lecture-16.pdf)
+    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/2025_mphil-data-intensive/../mphil-lecture-examples)
+
+1. Data Driven Radio Astronomy in the SKA era (2 Lectures)
+    - Minor Module 2024
+    - MPhil Data Intensive Science Minor Module
+    - University of Cambridge
+    - Lectures:
+        - [Signal Emulation for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-15-2024.mp4)
+        - [Simulation Based Inference for Astrophysics and Cosmology](https://github.com/htjb/Talks/raw/master/Lectures/2024_mphil-data-intensive/Lecture-16-2024.mp4)
+    - [Code Examples](https://github.com/htjb/Talks/tree/master/Lectures/2024_mphil-data-intensive/../mphil-lecture-examples)
+
+1. Hamilton's Principle
+    - Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks.
+    - Faculty Job Application
+    - Cavendish Physics, University of Cambridge
+    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/Hamiltons-Principle/Lecture.pdf)
+    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
 
 # Posters
 
