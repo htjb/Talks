@@ -146,15 +146,6 @@ def render_lecture(item: dict, talk: dict) -> str:
 def generate_readme() -> str:
     parts = []
 
-    # Lectures
-    lectures = load_section("Lectures")
-    if lectures:
-        parts.append("# Lectures\n")
-        for item in lectures:
-            for talk in item.get("talks", []):
-                parts.append(render_lecture(item, talk))
-                parts.append("")
-
     # Talks
     talks = load_section("Talks")
     if talks:
@@ -164,6 +155,15 @@ def generate_readme() -> str:
                 parts.append(render_talk(item, talk))
                 parts.append("")
 
+    # Lectures
+    lectures = load_section("Lectures")
+    if lectures:
+        parts.append("# Lectures\n")
+        for item in lectures:
+            for talk in item.get("talks", []):
+                parts.append(render_lecture(item, talk))
+                parts.append("")
+    
     # Posters
     posters = load_section("Posters")
     if posters:
