@@ -35,7 +35,7 @@
 % ══════════════════════════════════════════════════════════════════════════════
 \newcommand{\talkconfooter}{AI in Radio Astronomy, ROE Edinburgh, Mar 2026}
 \newcommand{\talkemail}{htjb2@cam.ac.uk}
-\newcommand{\talkarxiv}{arXiv:2503.13263}
+\newcommand{\talkarxiv}{\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
 
 % ══════════════════════════════════════════════════════════════════════════════
 %  BEAMER APPEARANCE
@@ -104,14 +104,33 @@
     \titlepage
 \end{frame}
 
-% ── 2. Why emulators? ─────────────────────────────────────────────────────────
+% ── 2a. Why emulators? ─────────────────────────────────────────────────────────
 \begin{frame}{Emulators in astrophysics and cosmology}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.5\textwidth}
             \begin{itemize}
-                \item Detailed models take \textbf{hours to evaluate} per parameter set
+                \item The main goal of what we do is to infer the nature of the Universe
+                \item This requires comparison of our observations $D$ to models $M(\theta)$
+                \item Detailed models take \textbf{minutes, hours or even days evaluate} per parameter set
                       (e.g.\ 21-cm semi-numerical codes, CMB solvers, SED models)
                 \item Bayesian inference requires $10^4$--$10^6$ evaluations
+            \end{itemize}
+        \end{column}
+        \hfill
+        \begin{column}{0.48\textwidth}
+            \vspace{1em}
+            \centering
+            \includegraphics[width=\textwidth]{figs/21-cm-lightcone.jpeg}
+            \includegraphics[width=\textwidth]{figs/planck-cmb.jpg}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ── 2b. Why emulators? ─────────────────────────────────────────────────────────
+\begin{frame}{Emulators in astrophysics and cosmology}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
                 \item Neural network \textbf{emulators} learn the mapping
                       $\theta \mapsto M(\theta)$ from training data and evaluate in
                       \textbf{milliseconds}
@@ -121,43 +140,41 @@
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.42\textwidth}
+        \begin{column}{0.48\textwidth}
             \vspace{1em}
             \centering
-            % schematic figure -- replace with a nice emulator diagram if available
-            \includegraphics[width=\textwidth]{figs/posterior_consistency.png}
-            \\[0.3em]
-            {\small globalemu vs ARES posteriors\\(full details later)}
+            \includegraphics[width=\textwidth]{figs/speculator.jpg}
+            {\footnotesize \texttt{speculator} - Alsing et al. 1911.11778}
         \end{column}
     \end{columns}
 \end{frame}
-
 % ── 3. The problem ────────────────────────────────────────────────────────────
 \begin{frame}{How accurate does an emulator need to be?}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.58\textwidth}
+            {\small
             \begin{itemize}
-                \item We measure accuracy in \textbf{signal space}:
+                \item Typically measure accuracy in \textbf{signal space}:
                       \[
                           \mathrm{RMSE} = \sqrt{\frac{1}{N_d}\sum_i
                           \bigl(S_\mathrm{true} - S_\mathrm{pred}\bigr)^2}
                       \]
-                \item Rules of thumb exist, e.g.\
+                \item Rules of thumb to justify, e.g.\
                       ``$\mathrm{RMSE} \lesssim 0.1\sigma$''
                       (\textsc{globalemu}, Bevins et al.\ 2021)
                 \item But \textbf{what does this mean for the recovered posterior?}
-                \item We generally don't have access to the true posterior
+                \item We don't have access to the true posterior
                       $P(\theta | D, M)$ -- only $P_\epsilon(\theta | D, M_\epsilon)$
                 \item We need a \textbf{principled, instrument-aware metric}
             \end{itemize}
+            }
         \end{column}
         \hfill
-        \begin{column}{0.42\textwidth}
+        \begin{column}{0.4\textwidth}
+            \vspace{1em}
             \centering
-            \includegraphics[width=\textwidth]{figs/accuracy_comparison_ares_emulators_val_data.png}
-            \\[0.3em]
-            {\small Emulator error in signal space:\\
-            with (orange) and without (purple) preprocessing}
+            \includegraphics[width=\textwidth]{figs/emulator-accuracy-21cmVAE.jpg}
+            {\footnotesize \texttt{21cmVAE} - Bye et al. 2107.05581}
         \end{column}
     \end{columns}
 \end{frame}
