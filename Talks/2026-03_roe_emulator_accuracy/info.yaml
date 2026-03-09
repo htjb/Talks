@@ -1,0 +1,8 @@
+type: talk
+date: "2026-03"
+event: "AI in Radio Astronomy Workshop: Preparing the UK for the SKA Data Future"
+location: "Royal Observatory Edinburgh, Edinburgh"
+talks:
+  - title: "Understanding the impact of emulators in our inference pipelines"
+    invited: false
+    pdf: "emulator_accuracy.pdf"

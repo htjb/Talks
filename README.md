@@ -1,5 +1,11 @@
 # Talks
 
+1. Understanding the impact of emulators in our inference pipelines
+    - AI in Radio Astronomy Workshop: Preparing the UK for the SKA Data Future
+    - Royal Observatory Edinburgh, Edinburgh
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-03_roe_emulator_accuracy/emulator_accuracy.pdf)
+    - March 2026
+
 1. Machine Learning the Infant Universe
     - Jodrell Bank Centre for Astrophysics Colloquium
     - University of Manchester, Manchester

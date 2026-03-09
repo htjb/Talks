@@ -1,0 +1,248 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  Harry Bevins – Beamer Presentation Template                               ║
+% ║  Style based on 2025/2026 Keynote talks (white, clean, sans-serif)         ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+%
+% Quick-start: edit the \talkinfo block below, then add frames.
+%
+% Compile with:  pdflatex bevins-beamer.tex
+% or:            lualatex bevins-beamer.tex   (recommended for better fonts)
+
+\documentclass[aspectratio=169, 12pt]{beamer}
+
+% ─── Fonts ────────────────────────────────────────────────────────────────────
+% Option A (pdflatex): Helvetica clone
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Option B (lualatex/xelatex): Closer match to Keynote's feel – uncomment to use
+% \usepackage{fontspec}
+% \setsansfont{Helvetica Neue}   % macOS; or try "TeX Gyre Heros" (free)
+% \setmainfont{Helvetica Neue}
+
+\usepackage{microtype}
+
+% ─── Math ─────────────────────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb}
+
+% ─── Graphics & Layout ────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% ─── Hyperlinks ───────────────────────────────────────────────────────────────
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor   = blue,
+    linkcolor  = black,
+    citecolor  = black,
+}
+
+% ─── Colors ───────────────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{footergray}{RGB}{130, 130, 130}
+% Accent colour: used sparingly (e.g. highlighted text, overlays).
+% Matches the dark navy found in section-divider slides.
+\definecolor{accentblue}{RGB}{20, 40, 100}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  TALK METADATA  –– edit this block for each new talk
+% ══════════════════════════════════════════════════════════════════════════════
+\newcommand{\talktitle}{Talk Title Goes Here}
+\newcommand{\talkauthor}{Harry T.\ J.\ Bevins}
+\newcommand{\talkposition}{Kavli Fellow}
+\newcommand{\talkinstitute}{Kavli Institute for Cosmology, University of Cambridge}
+\newcommand{\talkconfooter}{Conference Name, Month Year}   % appears in footer
+\newcommand{\talkemail}{htjb2@cam.ac.uk}
+% arXiv tag – leave empty {} to suppress
+\newcommand{\talkarxiv}{}
+% \newcommand{\talkarxiv}{arXiv:2503.13263}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  BEAMER APPEARANCE
+% ══════════════════════════════════════════════════════════════════════════════
+
+\setbeamertemplate{navigation symbols}{}        % no nav buttons
+
+% Background & text
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=black, bg=white}
+
+% Frame title: top-left, bold, plain black text – no box/bar
+\setbeamercolor{frametitle}{fg=black, bg=white}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamertemplate{frametitle}{%
+    \vspace{0.45em}%
+    \insertframetitle%
+}
+
+% Bullets: large filled circle, then dashes for sub-items
+\setbeamercolor{item}{fg=black}
+\setbeamercolor{subitem}{fg=black}
+\setbeamercolor{subsubitem}{fg=black}
+\setbeamertemplate{itemize item}{\large$\bullet$}
+\setbeamertemplate{itemize subitem}{--}
+\setbeamertemplate{itemize subsubitem}{$\circ$}
+\setlength{\leftmargini}{1.2em}
+
+% ─── Footer ───────────────────────────────────────────────────────────────────
+% Layout: [bold gray "Conference, Date – email"] ........ [arXiv]  [page]
+\setbeamertemplate{footline}{%
+    \begin{beamercolorbox}[wd=\paperwidth, ht=2.4ex, dp=1.4ex]{footline}
+        \hspace*{0.025\paperwidth}%
+        {\color{footergray}\scriptsize\textbf{\talkconfooter{} -- \talkemail}}%
+        \hfill
+        \ifx\talkarxiv\empty\else
+            {\color{blue}\scriptsize\talkarxiv}%
+            \hspace{0.8em}%
+        \fi
+        {\color{footergray}\scriptsize\insertframenumber}%
+        \hspace*{0.025\paperwidth}%
+    \end{beamercolorbox}%
+}
+
+% ─── Title page ───────────────────────────────────────────────────────────────
+\setbeamertemplate{title page}{%
+    \vspace{0.10\paperheight}
+    \begin{center}
+        % Large bold title
+        {\bfseries\LARGE\talktitle\par}
+        \vspace{0.9em}
+        % Author and position
+        {\large\talkauthor\par}
+        \vspace{0.25em}
+        {\normalsize\talkposition\par}
+        \vspace{1.4em}
+        % Logos row – add/remove \includegraphics lines as needed
+        %
+        \includegraphics[height=1.1cm]{logos/cambridge.png}\hspace{0.6cm}%
+        \includegraphics[height=1.1cm]{logos/kicc.png}\hspace{0.6cm}%
+        \includegraphics[height=1.1cm]{logos/cavendish.png}\hspace{0.6cm}%
+        \includegraphics[height=1.1cm]{logos/reach.png}\hspace{0.6cm}%
+        \includegraphics[height=1.1cm]{logos/cosmocube.png}%
+        %
+    \end{center}
+}
+
+% ──  Helper: section-divider frame  ──────────────────────────────────────────
+% Usage: \sectionframe{Section Title Text}
+\newcommand{\sectionframe}[1]{%
+    \begin{frame}{}
+        \vfill
+        \begin{center}
+            {\large #1}
+        \end{center}
+        \vfill
+    \end{frame}%
+}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ══════════════════════════════════════════════════════════════════════════════
+
+% ── Title slide ───────────────────────────────────────────────────────────────
+\begin{frame}{}
+    \titlepage
+\end{frame}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  SECTION 1
+% ══════════════════════════════════════════════════════════════════════════════
+
+\sectionframe{Section One Title}
+
+% ── Bullets-only slide ────────────────────────────────────────────────────────
+\begin{frame}{Slide Title}
+    \begin{itemize}
+        \item First bullet point
+        \item Second bullet point with a longer explanation that wraps to the
+              next line naturally
+        \item Point with inline citation
+              (Author et al.\ 2025, \href{https://arxiv.org/abs/XXXX.XXXXX}{arXiv:XXXX.XXXXX})
+        \item Point with displayed equation:
+              \[
+                  T_{21} = \frac{T_s - T_\text{CMB}}{1+z}\!\left(1 - e^{-\tau_{21}}\right)
+              \]
+    \end{itemize}
+\end{frame}
+
+% ── Two-column: bullets left, figure right ────────────────────────────────────
+\begin{frame}{Slide With Figure}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item Bullet pointing to the figure on the right
+                \item Another bullet point
+                \item And another one
+                \item Sub-item example:
+                      \begin{itemize}
+                          \item Sub-point one
+                          \item Sub-point two
+                      \end{itemize}
+            \end{itemize}
+        \end{column}
+        \hfill
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{example-image}  % replace with figure
+            \\[0.3em]
+            {\small Optional caption text}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ── Three-panel figure row (like the "brief history" slides) ──────────────────
+\begin{frame}{Slide With Figure Row}
+    \begin{columns}[T]
+        \begin{column}{0.30\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{example-image-a}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{example-image-b}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{example-image-c}
+        \end{column}
+    \end{columns}
+    \vspace{0.5em}
+    \begin{itemize}
+        \item A note about the figures above
+    \end{itemize}
+\end{frame}
+
+% ── Full-width figure slide ───────────────────────────────────────────────────
+\begin{frame}{Full-Width Figure}
+    \centering
+    \includegraphics[width=0.88\textwidth]{example-image}
+\end{frame}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  SECTION 2
+% ══════════════════════════════════════════════════════════════════════════════
+
+\sectionframe{Section Two Title}
+
+% ── Slide with overlay / incremental reveals ─────────────────────────────────
+\begin{frame}{Incremental Slide}
+    \begin{itemize}
+        \item<1-> Always visible
+        \item<2-> Appears on click 2
+        \item<3-> Appears on click 3
+    \end{itemize}
+\end{frame}
+
+% ── Highlighted text (uses accent colour) ────────────────────────────────────
+\begin{frame}{Slide With Highlighted Text}
+    \begin{itemize}
+        \item Normal text looks like this
+        \item \textcolor{accentblue}{Highlighted text in navy blue}
+        \item Back to normal text
+    \end{itemize}
+\end{frame}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\end{document}
