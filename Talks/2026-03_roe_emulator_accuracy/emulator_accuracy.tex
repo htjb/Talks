@@ -72,7 +72,7 @@
     \vspace{0.10\paperheight}
     \begin{center}
         {\bfseries\LARGE Understanding the impact of emulators\\[0.2em]
-        in our inference pipelines\par}
+        in inference \par}
         \vspace{0.9em}
         {\large Harry T.\ J.\ Bevins\par}
         \vspace{0.25em}
@@ -383,7 +383,27 @@
     \end{columns}
 \end{frame}
 
-% ── 11. Conclusions ───────────────────────────────────────────────────────────
+% ── 11. astroemu ────────────────────────────────────────────────────
+\begin{frame}{\textsc{astroemu}}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item Written in JAX with JAX native dataloaders
+                \item Tilling approach to emulation inspired by \textsc{globalemu}
+                \item \href{https://github.com/htjb/astroemu}{github}
+                \item \texttt{pip install astroemu}
+                \item Built in $D_{KL}(P || P_\epsilon)$ loss funciton
+            \end{itemize}
+        \end{column}
+        \hfill
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figs/globalemu.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ── 12. Conclusions ───────────────────────────────────────────────────────────
 \begin{frame}{Summary}
     \begin{columns}[T]
         \begin{column}{0.6\textwidth}
