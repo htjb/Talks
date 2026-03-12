@@ -154,24 +154,26 @@
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
             \begin{itemize}
-                \item 
-                \item 
-                \item 
+                \item Dipole antenna based in the Karoo in South Africa
+                \item Goal is to measure the sky-averaged 21-cm signal
+                \item Collected around 350 hours of on sky data
+                \item Analysis pipeline heavily reliant on emulators for physical signal modelling
+                \item ...and instrument modelling
             \end{itemize}
         \end{column}
         \hfill
         \begin{column}{0.48\textwidth}
             \vspace{1em}
             \centering
-            \includegraphics[width=\textwidth]{figs/speculator.jpg}
-            {\footnotesize \texttt{speculator} - Alsing et al. 1911.11778}
+            \includegraphics[width=0.8\textwidth]{figs/reach.png}
+            \includegraphics[width=0.9\textwidth]{figs/21cmsignal.png}
         \end{column}
     \end{columns}
 \end{frame}
 % ── 3. The problem ────────────────────────────────────────────────────────────
 \begin{frame}{How accurate does an emulator need to be?}
     \begin{columns}[T]
-        \begin{column}{0.58\textwidth}
+        \begin{column}{0.6\textwidth}
             {\small
             \begin{itemize}
                 \item Typically measure accuracy in \textbf{signal space}:
@@ -200,9 +202,9 @@
 \end{frame}
 
 % ── Section divider ───────────────────────────────────────────────────────────
-\sectionframe{A KL divergence bound on posterior accuracy}
+\sectionframe{A KL divergence bound on posterior accuracy\\\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
 
-% ── 4. Setting up ─────────────────────────────────────────────────────────────
+% ── 4a. Setting up ─────────────────────────────────────────────────────────────
 \begin{frame}{Emulator error propagates into the posterior}
     \begin{itemize}
         \item Emulator error $\epsilon(\theta) = M_\epsilon(\theta) - M(\theta)$
@@ -221,12 +223,22 @@
                   \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
                   = \int P \log\!\left(\frac{P}{P_\epsilon}\right) d\theta
               \]
+    \end{itemize}
+\end{frame}
+
+% ── 4b. Setting up ─────────────────────────────────────────────────────────────
+\begin{frame}{Emulator error propagates into the posterior}
+    \begin{itemize}
+        \item \textbf{Kullback--Leibler divergence}:
+              \[
+                  \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
+                  = \int P \log\!\left(\frac{P}{P_\epsilon}\right) d\theta
+              \]
         \item This quantifies the \textbf{incorrect information inferred} (in nats)
               when using the emulator --- we want $\mathcal{D}_\mathrm{KL} < 1$
         \item Problem: we don't have access to $P$ to evaluate this directly \ldots
     \end{itemize}
 \end{frame}
-
 % ── 5. Main result ────────────────────────────────────────────────────────────
 \begin{frame}{A theoretically motivated upper bound}
     \begin{columns}[T]
@@ -234,7 +246,7 @@
             Under three assumptions:
             \begin{itemize}
                 \item \textbf{Gaussian likelihood} and broad uniform prior
-                \item \textbf{Linear model} around the posterior peak
+                \item \textbf{Linear model} around the posterior peak (similar to a Laplace approximation)
                 \item \textbf{White (uncorrelated) noise} in the data
             \end{itemize}
             \vspace{0.2em}
@@ -246,19 +258,16 @@
                     \left(\frac{\mathrm{RMSE}}{\sigma}\right)^{\!2}
                 }
             \]
+        \end{column}
+        \hfill
+        \begin{column}{0.45\textwidth}
+            \vspace{1em}
+            \centering
+            \includegraphics[width=\textwidth]{figs/kl_divergence.png}
             \vspace{-0.3em}
             For $\mathcal{D}_\mathrm{KL} < 1$:
             $\;\frac{\mathrm{RMSE}}{\sigma} \leq \sqrt{\frac{2}{N_d}}$
             \;($\lesssim 14\%$ for $N_d \sim 100$)
-        \end{column}
-        \hfill
-        \begin{column}{0.42\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figs/kl_divergence.png}
-            \\[0.3em]
-            {\small KL divergence bound as a function of noise $\sigma$
-            and emulator RMSE.
-            Crosses show our measured $\mathcal{D}_\mathrm{KL}$ values.}
         \end{column}
     \end{columns}
 \end{frame}
@@ -479,7 +488,7 @@
               $\frac{1}{2\sigma^2}\,\epsilon_0^T M M^+ \epsilon_0$
               where $M M^+$ is a projection matrix with eigenvalues in $\{0,1\}$
         \item Bounding via $\max(\lambda_n) = 1$ and $\|\epsilon_0\|^2 = N_d\,\mathrm{RMSE}^2$
-              gives the result on slide 5
+              gives the limit 
     \end{itemize}
 \end{frame}
 
@@ -497,28 +506,6 @@
         \item Applies most directly to posteriors that are \textbf{unimodal and
               approximately Gaussian} -- multimodal cases warrant extra care
     \end{itemize}
-\end{frame}
-
-% ── B3. All four noise levels ─────────────────────────────────────────────────
-\begin{frame}{Posterior recovery at all noise levels}
-    \begin{columns}[T]
-        \begin{column}{0.49\textwidth}
-            \centering
-            \includegraphics[width=0.9\textwidth, height=3.0cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_250_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 250\,\mathrm{mK}$}
-            \\[0.1em]
-            \includegraphics[width=0.9\textwidth, height=3.0cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_50_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 50\,\mathrm{mK}$}
-        \end{column}
-        \begin{column}{0.49\textwidth}
-            \centering
-            \includegraphics[width=0.9\textwidth, height=3.0cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 25\,\mathrm{mK}$}
-            \\[0.1em]
-            \includegraphics[width=0.9\textwidth, height=3.0cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_5_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 5\,\mathrm{mK}$}
-        \end{column}
-    \end{columns}
 \end{frame}
 
 % ══════════════════════════════════════════════════════════════════════════════
