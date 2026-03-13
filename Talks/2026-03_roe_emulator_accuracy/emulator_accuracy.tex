@@ -135,8 +135,8 @@
                       $\theta \mapsto M(\theta)$ from training data and evaluate in
                       \textbf{milliseconds}
                 \item Used across the field: 21-cm, CMB, SED fitting, LSS, GWs \ldots
-                \item \textbf{Their role will only grow as SKA delivers data at
-                      unprecedented scale}
+                \item \textbf{Their role will only grow as we enter the era of big
+                    data astrophysics with the SKA, Vera C. Rubin etc.}
             \end{itemize}
         \end{column}
         \hfill
@@ -158,7 +158,8 @@
                 \item Goal is to measure the sky-averaged 21-cm signal
                 \item Collected around 350 hours of on sky data
                 \item Analysis pipeline heavily reliant on emulators for physical signal modelling
-                \item ...and instrument modelling
+                \item ...and soon instrument modelling
+                \item See talks from Eloy, Jacob and Sam later in the workshop
             \end{itemize}
         \end{column}
         \hfill
@@ -277,8 +278,8 @@
     \begin{itemize}
         \item \textbf{Instrument-aware}: the required emulator accuracy scales with the
               noise -- better instruments demand more accurate emulators
-        \item \textbf{Predictive}: evaluable without running the full simulation in
-              inference -- only RMSE on a test set and $\sigma$ are needed
+        \item \textbf{Predictive}: given an emualtor with a given accuracy, how
+              accurate can I expect my posteriors to be? 
         \item \textbf{Can be inverted}: given a target posterior accuracy and noise
               level, compute the required RMSE \emph{before} running inference
         \item \textbf{Loss function / hyperparameter tuning}: optimise emulator
@@ -293,7 +294,7 @@
 % ── 7. 21-cm setup ────────────────────────────────────────────────────────────
 \begin{frame}{Sky-averaged 21-cm cosmology with ARES and globalemu}
     \begin{columns}[T]
-        \begin{column}{0.52\textwidth}
+        \begin{column}{0.55\textwidth}
             \begin{itemize}
                 \item 21-cm spin-flip signal from neutral hydrogen traces the
                       \textbf{first stars and galaxies} ($z \sim 5$--$30$)
@@ -304,15 +305,14 @@
                 \item Inference with \textsc{PolyChord} on mock data at
                       $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
                 \item Direct comparison: posteriors from \textbf{ARES} (blue)
-                      vs \textbf{globalemu} (orange) -- SKA precursors (REACH,
-                      SARAS) use the same approach
+                      vs \textbf{globalemu} (orange)
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.45\textwidth}
+        \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.9\textwidth]{figs/posterior_ares_fiducial_model_noise_250_ARES_True_FIXED_NOISE_True.png}
-            \\[0.3em]
+            \includegraphics[width=0.98\textwidth]{figs/posterior_ares_fiducial_model_noise_250_ARES_True_FIXED_NOISE_True.png}
+            \\[-0.3em]
             {\small $\sigma = 250\,\mathrm{mK}$: ARES vs globalemu}
         \end{column}
     \end{columns}
@@ -320,61 +320,27 @@
 
 % ── 8. Signal-space accuracy ──────────────────────────────────────────────────
 \begin{frame}{Emulator accuracy in signal space}
-    \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
-            \begin{itemize}
-                \item Two \textsc{globalemu} emulators trained:
-                      \begin{itemize}
-                          \item \textbf{Orange}: with physically motivated
-                                preprocessing (AFB + resampling)
-                          \item \textbf{Purple}: without preprocessing
-                                (as in Dorigo Jones et al.\ 2023)
-                      \end{itemize}
-                \item Preprocessing consistently \textbf{reduces mean RMSE}
-                      across all redshifts
-                \item Preprocessing choices matter --
-                      training choices affect posterior recovery
-            \end{itemize}
-        \end{column}
         \hfill
-        \begin{column}{0.48\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figs/accuracy_comparison_ares_emulators_val_data.png}
-            \\[0.3em]
-            {\small Mean (solid) and 95th percentile (dashed) absolute error
-            vs.\ redshift. Coloured regions: CD, Heating, EoR epochs.}
-        \end{column}
-    \end{columns}
+        
+        \centering
+        \includegraphics[width=0.8\textwidth]{figs/accuracy_comparison_ares_emulators_val_data.png}
+        \\[0.3em]
+        {\small Mean (solid) and 95th percentile (dashed) absolute error
+        vs.\ redshift. Coloured regions: CD, Heating, EoR epochs.}
 \end{frame}
 
 % ── 9. KL divergence in practice ──────────────────────────────────────────────
 \begin{frame}{KL divergence bound vs observed accuracy}
-    \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
-            \begin{itemize}
-                \item Contour map shows the \textbf{upper bound on
-                      $\mathcal{D}_\mathrm{KL}$} as a function of noise $\sigma$
-                      and emulator RMSE
-                \item \textbf{Purple crosses}: measured $\mathcal{D}_\mathrm{KL}$
-                      from our runs (via normalising flows, \textsc{margarine})
-                \item All four noise levels sit \textbf{comfortably below}
-                      $\mathcal{D}_\mathrm{KL} = 1\,\mathrm{nat}$
-                \item Dotted lines mark our four noise levels;
-                      dashed lines are constant-RMSE contours
-                \item The bound \textbf{correctly predicts} where the emulator
-                      is safe to use
-            \end{itemize}
-        \end{column}
+        \begin{itemize}
+            \item \textbf{Purple crosses}: measured $\mathcal{D}_\mathrm{KL}$
+                    from our runs (via normalising flows, \textsc{margarine})
+            \item Dotted lines mark our four noise levels;
+                    dashed lines are constant-RMSE contours for the trained network
+        \end{itemize}
         \hfill
-        \begin{column}{0.48\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figs/kl_divergence.png}
-            \\[0.3em]
-            {\small Bound (shading) and measured $\mathcal{D}_\mathrm{KL}$
-            (crosses). Red/green dashed: $\mathcal{D}_\mathrm{KL}=1$
-            boundary for the two emulators.}
-        \end{column}
-    \end{columns}
+        {\centering
+        \includegraphics[width=0.7\textwidth]{figs/kl_divergence.png}
+        }
 \end{frame}
 
 % ── 10. Posterior recovery ────────────────────────────────────────────────────
@@ -436,10 +402,8 @@
                       more accurate emulators
                 \item \textbf{Global 21-cm}: accurate posteriors recovered
                       even at $\mathrm{RMSE} \approx 20\%$ of the noise
-                \item \textbf{Broadly applicable}: any Gaussian-likelihood
-                      pipeline -- SKA, CMB, SED fitting, \ldots
-                \item Next: \textbf{power spectrum emulators} (zeus21)
-                      for SKA-era science
+                \item \textbf{Broadly applicable}: any field beyond 21-cm using emulators e.g. SKA, CMB, SED fitting, \ldots
+                \item Plan to demonstrate applications to the 21-cm \textbf{power spectrum emulators} and beyond with \textsc{astroemu}
             \end{itemize}
         \end{column}
         \hfill
