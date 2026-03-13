@@ -267,7 +267,7 @@
             \vspace{-0.3em}
             For $\mathcal{D}_\mathrm{KL} < 1$:
             $\;\frac{\mathrm{RMSE}}{\sigma} \leq \sqrt{\frac{2}{N_d}}$
-            \;($\lesssim 14\%$ for $N_d \sim 100$)
+            \\($\lesssim 0.14$ for $N_d \sim 100$)
         \end{column}
     \end{columns}
 \end{frame}
@@ -277,25 +277,18 @@
     \begin{itemize}
         \item \textbf{Instrument-aware}: the required emulator accuracy scales with the
               noise -- better instruments demand more accurate emulators
-              \begin{itemize}
-                  \item For $N_d = 100$: $\mathrm{RMSE}/\sigma \lesssim 14\%$ for
-                        $\mathcal{D}_\mathrm{KL} < 1$
-                  \item SKA power spectrum: $N_d \sim 10^3$--$10^4$, so requirements
-                        tighten as $\sqrt{2/N_d}$
-              \end{itemize}
         \item \textbf{Predictive}: evaluable without running the full simulation in
               inference -- only RMSE on a test set and $\sigma$ are needed
         \item \textbf{Can be inverted}: given a target posterior accuracy and noise
               level, compute the required RMSE \emph{before} running inference
         \item \textbf{Loss function / hyperparameter tuning}: optimise emulator
               training to minimise the bound directly, instrument by instrument
-        \item \textbf{Broadly applicable}: any pipeline with a Gaussian likelihood
-              and approximately linear model -- SKA data analysis, SED fitting, CMB, \ldots
+        \item \textbf{Broadly applicable}: SKA data analysis, SED fitting, CMB, \ldots
     \end{itemize}
 \end{frame}
 
 % ── Section divider ───────────────────────────────────────────────────────────
-\sectionframe{Application to 21-cm cosmology}
+\sectionframe{Application to sky-averaged 21-cm cosmology}
 
 % ── 7. 21-cm setup ────────────────────────────────────────────────────────────
 \begin{frame}{Sky-averaged 21-cm cosmology with ARES and globalemu}
