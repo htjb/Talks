@@ -184,7 +184,6 @@
                       \]
                 \item Rules of thumb to justify, e.g.\
                       ``$\mathrm{RMSE} \lesssim 0.1\sigma$''
-                      (\textsc{globalemu}, Bevins et al.\ 2021)
                 \item But \textbf{what does this mean for the recovered posterior?}
                 \item We don't have access to the true posterior
                       $P(\theta | D, M)$ -- only $P_\epsilon(\theta | D, M_\epsilon)$
@@ -194,9 +193,11 @@
         \end{column}
         \hfill
         \begin{column}{0.4\textwidth}
-            \vspace{1em}
+            %\vspace{1em}
             \centering
-            \includegraphics[width=\textwidth]{figs/emulator-accuracy-21cmVAE.jpg}
+            \includegraphics[width=0.8\textwidth]{figs/globalemu-error.png}\\
+            {\footnotesize \texttt{globalemu} - Bevins et al. 2104.04336}\\
+            \includegraphics[width=0.7\textwidth]{figs/emulator-accuracy-21cmVAE.jpg}\\
             {\footnotesize \texttt{21cmVAE} - Bye et al. 2107.05581}
         \end{column}
     \end{columns}
@@ -243,7 +244,7 @@
 % ── 5. Main result ────────────────────────────────────────────────────────────
 \begin{frame}{A theoretically motivated upper bound}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.5\textwidth}
             Under three assumptions:
             \begin{itemize}
                 \item \textbf{Gaussian likelihood} and broad uniform prior
@@ -261,14 +262,10 @@
             \]
         \end{column}
         \hfill
-        \begin{column}{0.45\textwidth}
-            \vspace{1em}
+        \begin{column}{0.5\textwidth}
+            \vspace{2em}
             \centering
-            \includegraphics[width=\textwidth]{figs/kl_divergence.png}
-            \vspace{-0.3em}
-            For $\mathcal{D}_\mathrm{KL} < 1$:
-            $\;\frac{\mathrm{RMSE}}{\sigma} \leq \sqrt{\frac{2}{N_d}}$
-            \\($\lesssim 0.14$ for $N_d \sim 100$)
+            \includegraphics[width=\textwidth]{figs/kl_divergence-illustration.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -300,20 +297,17 @@
                       \textbf{first stars and galaxies} ($z \sim 5$--$30$)
                 \item \textbf{ARES}: 1D radiative transfer code, $\sim$seconds per
                       evaluation, 8 free parameters
+                \item Modelling reionization, X-ray heating, star formation and
+                        cosmology
                 \item \textbf{globalemu}: neural network emulator of ARES
                       (Bevins et al.\ 2021, MNRAS)
-                \item Inference with \textsc{PolyChord} on mock data at
-                      $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
-                \item Direct comparison: posteriors from \textbf{ARES} (blue)
-                      vs \textbf{globalemu} (orange)
             \end{itemize}
         \end{column}
         \hfill
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.98\textwidth]{figs/posterior_ares_fiducial_model_noise_250_ARES_True_FIXED_NOISE_True.png}
-            \\[-0.3em]
-            {\small $\sigma = 250\,\mathrm{mK}$: ARES vs globalemu}
+            \includegraphics[width=0.8\textwidth]{figs/21cmsignal.png}\\
+            \includegraphics[width=0.75\textwidth]{figs/ares_validation_data.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -329,29 +323,16 @@
         vs.\ redshift. Coloured regions: CD, Heating, EoR epochs.}
 \end{frame}
 
-% ── 9. KL divergence in practice ──────────────────────────────────────────────
-\begin{frame}{KL divergence bound vs observed accuracy}
-        \begin{itemize}
-            \item \textbf{Purple crosses}: measured $\mathcal{D}_\mathrm{KL}$
-                    from our runs (via normalising flows, \textsc{margarine})
-            \item Dotted lines mark our four noise levels;
-                    dashed lines are constant-RMSE contours for the trained network
-        \end{itemize}
-        \hfill
-        {\centering
-        \includegraphics[width=0.7\textwidth]{figs/kl_divergence.png}
-        }
-\end{frame}
-
 % ── 10. Posterior recovery ────────────────────────────────────────────────────
 \begin{frame}{Posterior recovery: ARES vs globalemu}
     \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.55\textwidth}
             \begin{itemize}
-                \item \textbf{Blue}: inference with ARES directly
-                \item \textbf{Orange}: inference with globalemu emulator
-                \item Posteriors agree \textbf{very well} at $\sigma = 50\,\mathrm{mK}$
-                      (top) and $\sigma = 5\,\mathrm{mK}$ (bottom; stringent test)
+                \item Inference with \textsc{PolyChord} on mock data at
+                      $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
+                \item Direct comparison: posteriors from \textbf{ARES} (blue)
+                      vs \textbf{globalemu} (orange)
+                \item Posteriors agree \textbf{very well} down to $\sigma = 5\,\mathrm{mK}$
                 \item Mean RMSE $\approx 20\%$ of noise and still
                       $\mathcal{D}_\mathrm{KL} \ll 1$
                 \item Emulators are \textbf{trustworthy} tools for inference
@@ -361,15 +342,25 @@
         \hfill
         \begin{column}{0.48\textwidth}
             \centering
-            \includegraphics[width=0.85\textwidth, height=3.2cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_50_ARES_True_FIXED_NOISE_True.png}
-            \\[-0.1em]
-            {\tiny $\sigma = 50\,\mathrm{mK}$}\\[0.1em]
-            \includegraphics[width=0.85\textwidth, height=3.2cm, keepaspectratio]{figs/posterior_ares_fiducial_model_noise_5_ARES_True_FIXED_NOISE_True.png}
-            \\[-0.1em]
-            {\tiny $\sigma = 5\,\mathrm{mK}$}
+            \includegraphics[width=\textwidth]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
+            {\tiny $\sigma = 25\,\mathrm{mK}$}\\[0.1em]
         \end{column}
     \end{columns}
 \end{frame}
+
+% ── 9. KL divergence in practice ──────────────────────────────────────────────
+\begin{frame}{KL divergence bound vs observed accuracy}
+    \begin{itemize}
+        \item \textbf{Red markers}: measured $\mathcal{D}_\mathrm{KL}$
+              from our runs (via normalising flows, \href{https://github.com/htjb/margarine}{\textsc{margarine}})
+    \end{itemize}
+    \vfill
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{figs/kl_divergence.png}
+    \end{center}
+    \vfill
+\end{frame}
+
 
 % ── 11. astroemu ────────────────────────────────────────────────────
 \begin{frame}{\textsc{astroemu}}
@@ -378,15 +369,25 @@
             \begin{itemize}
                 \item Written in JAX with JAX native dataloaders
                 \item Tilling approach to emulation inspired by \textsc{globalemu}
-                \item \href{https://github.com/htjb/astroemu}{github}
+                \item \href{https://github.com/htjb/astroemu}{github.com/htjb/astroemu}
                 \item \texttt{pip install astroemu}
-                \item Built in $D_{KL}(P || P_\epsilon)$ loss funciton
+                \item Built in $D_{KL}(P || P_\epsilon)$ loss function
+                \item Recently applied to recombination history and HYREC-2
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figs/globalemu.png}
+            \includegraphics[width=\textwidth, height=4.2cm, keepaspectratio]{figs/globalemu.png}\\[0.5em]
+            \begin{minipage}{0.49\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figs/hyrec_percent_error_tk.png}
+            \end{minipage}
+            \hfill
+            \begin{minipage}{0.49\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figs/hyrec_percent_error_xe.png}
+            \end{minipage}
         \end{column}
     \end{columns}
 \end{frame}
@@ -400,20 +401,25 @@
                       $\;\mathcal{D}_\mathrm{KL} \leq \frac{N_d}{2}\!\left(\frac{\mathrm{RMSE}}{\sigma}\right)^{\!2}$
                 \item \textbf{Instrument-aware}: better instruments need
                       more accurate emulators
+                \item Need to address the assumptions we made and see if this can be generalised
                 \item \textbf{Global 21-cm}: accurate posteriors recovered
                       even at $\mathrm{RMSE} \approx 20\%$ of the noise
                 \item \textbf{Broadly applicable}: any field beyond 21-cm using emulators e.g. SKA, CMB, SED fitting, \ldots
-                \item Plan to demonstrate applications to the 21-cm \textbf{power spectrum emulators} and beyond with \textsc{astroemu}
+                \item Plan to demonstrate this with \textsc{astroemu}
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.37\textwidth}
+        \begin{column}{0.5\textwidth}
             \centering
             {\small\textbf{Published in MNRAS}\\[0.2em]
             \href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}\\[0.4em]
             \textbf{Code:}\\
             \href{https://github.com/htjb/validating_posteriors}%
-            {\small github.com/htjb/\\validating\_posteriors}\\[0.5em]}
+            {\small github.com/htjb/validating\_posteriors}\\[0.5em]
+            \href{https://github.com/htjb/globalemu}%
+            {\small github.com/htjb/globalemu}\\[0.5em]
+            \href{https://github.com/htjb/astroemu}%
+            {\small github.com/htjb/astroemu}\\[0.5em]}
             \includegraphics[width=\textwidth]{figs/kl_divergence.png}
         \end{column}
     \end{columns}
