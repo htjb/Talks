@@ -110,9 +110,9 @@
 \begin{frame}{Emulators in astrophysics and cosmology}
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
-            \vspace{2em}
+            \vspace{1em}
             \begin{itemize}
-                \item The main goal of what we do is to infer the nature of the Universe
+                \item Our goal is to infer the nature of the Universe from observations
                 \item This requires comparison of our observations $D$ to models $M(\theta)$
                 \item Simulations take \textbf{minutes, hours or even days evaluate} per parameter set
                 \item Bayesian inference requires $10^4$--$10^6$ evaluations
@@ -131,19 +131,19 @@
 % ── 2b. Why emulators? ─────────────────────────────────────────────────────────
 \begin{frame}{Emulators in astrophysics and cosmology}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{itemize}
                 \item Look to Neural Networks to approximate our complex astrophysical models
                 \item Per parameter set run time goes from hours to
                       \textit{milliseconds}
-                \item Previously infeasible inference becomes possible
+                \item \textit{Previously infeasible inference becomes possible}
                 \item Used across the field: 21-cm, CMB, SED fitting, LSS, GWs \ldots
                 \item However emulators are \textit{an approximation}...
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.48\textwidth}
-            \vspace{1em}
+        \begin{column}{0.45\textwidth}
+            \vspace{3em}
             \centering
             \includegraphics[width=\textwidth]{figs/speculator.jpg}
             {\footnotesize \texttt{speculator} - Alsing et al. 1911.11778}
@@ -180,7 +180,7 @@
 \end{frame}
 
 % ── Section divider ───────────────────────────────────────────────────────────
-\sectionframe{A KL divergence bound on posterior accuracy\\\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
+\sectionframe{Posterior accuracy\\\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
 
 % ── 4a. Setting up ─────────────────────────────────────────────────────────────
 \begin{frame}{Emulator error propagates into the posterior}
@@ -206,22 +206,21 @@
 
 % ── 4b. Setting up ─────────────────────────────────────────────────────────────
 \begin{frame}{Emulator error propagates into the posterior}
-    \begin{itemize}
-        \item \textit{Kullback--Leibler divergence}:
-              \[
+            \[
                   \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
                   = \int P \log\!\left(\frac{P}{P_\epsilon}\right) d\theta
               \]
+    \begin{itemize}
         \item This quantifies the \textit{incorrect information inferred} (in nats)
               when using the emulator
-        \item Problem: we don't have access to $P$ to evaluate this directly \ldots
+        \item We don't have access to $P$ to evaluate this directly \ldots
+        \item \ldots but we can make some progress with a few assumptions
     \end{itemize}
 \end{frame}
 % ── 5. Main result ────────────────────────────────────────────────────────────
 \begin{frame}{A theoretically motivated upper bound}
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
-            Under three assumptions:
             \begin{itemize}
                 \item \textit{Gaussian likelihood} and broad uniform prior
                 \item \textit{Linear model} around the posterior peak (similar to a Laplace approximation)
@@ -263,10 +262,9 @@
 \sectionframe{Application to sky-averaged 21-cm cosmology}
 
 % ── 2c. REACH ─────────────────────────────────────────────────────────
-\begin{frame}{REACH}
+\begin{frame}{REACH -- \href{https://arxiv.org/abs/2210.07409}{2210.07409}}
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
-            \vspace{2em}
             \begin{itemize}
                 \item Dipole antenna based in the Karoo in South Africa
                 \item Goal is to measure the sky-averaged 21-cm signal from neutral hydrogen
@@ -279,8 +277,8 @@
         \begin{column}{0.48\textwidth}
             \vspace{1em}
             \centering
-            \includegraphics[width=0.8\textwidth]{figs/reach.png}
-            \includegraphics[width=0.9\textwidth]{figs/21cmsignal.png}
+            \includegraphics[width=0.7\textwidth]{figs/reach.png}
+            \includegraphics[width=0.75\textwidth]{figs/21cmsignal.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -288,7 +286,6 @@
 \begin{frame}{Sky-averaged 21-cm cosmology with ARES and globalemu}
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
-            \vspace{1em}
             \begin{itemize}
                 \item \textit{ARES}: 1D radiative transfer code, $\sim$seconds per
                       evaluation
@@ -323,7 +320,6 @@
 \begin{frame}{Posterior recovery: ARES vs globalemu}
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
-            \vspace{2em}
             \begin{itemize}
                 \item Inference with \textsc{PolyChord} on mock data at
                       $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
@@ -402,7 +398,6 @@
     \begin{columns}[T]
         \begin{column}{0.6\textwidth}
             \begin{itemize}
-                \vspace{2em}
                 \item Upper bound:
                       $\;\mathcal{D}_\mathrm{KL} (P || P_\epsilon) \leq \frac{N_d}{2}\!\left(\frac{\mathrm{RMSE}}{\sigma}\right)^{\!2}$
                 \item \textit{Instrument-aware}: better instruments need
