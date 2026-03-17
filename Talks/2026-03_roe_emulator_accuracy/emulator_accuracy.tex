@@ -9,6 +9,7 @@
 
 \documentclass[aspectratio=169, 12pt]{beamer}
 
+
 % ─── Fonts ────────────────────────────────────────────────────────────────────
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
@@ -223,8 +224,9 @@
         \begin{column}{0.5\textwidth}
             \begin{itemize}
                 \item \textit{Gaussian likelihood} and broad uniform prior
-                \item \textit{Linear model} around the posterior peak (similar to a Laplace approximation)
-                \item \textit{White (uncorrelated) noise} in the data
+                \item \textit{Linear model} around the posterior peak
+                \item \textit{Linear and slowly varying} emulator error
+                \item \textit{Uncorrelated noise} in the data
             \end{itemize}
             \vspace{0.2em}
             \[
@@ -265,11 +267,11 @@
 \begin{frame}{REACH -- \href{https://arxiv.org/abs/2210.07409}{2210.07409}}
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
+            \vspace{1em}
             \begin{itemize}
                 \item Dipole antenna based in the Karoo in South Africa
                 \item Goal is to measure the sky-averaged 21-cm signal from neutral hydrogen
                 \item Analysis pipeline heavily reliant on emulators for physical signal modelling
-                \item ...and soon instrument modelling
                 \item See talks from Eloy, Jacob and Sam later in the workshop
             \end{itemize}
         \end{column}
@@ -319,7 +321,7 @@
 % ── 10. Posterior recovery ────────────────────────────────────────────────────
 \begin{frame}{Posterior recovery: ARES vs globalemu}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.53\textwidth}
             \begin{itemize}
                 \item Inference with \textsc{PolyChord} on mock data at
                       $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
@@ -329,11 +331,11 @@
                 \item Estimate the KL divergence between the two distributions at different noise levels
             \end{itemize}
         \end{column}
-        \hfill
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 25\,\mathrm{mK}$}\\[0.1em]
+            \vspace{-0.5em}
+            {\tiny $\sigma = 25\,\mathrm{mK}$}
+            \includegraphics[width=0.95\textwidth]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
         \end{column}
     \end{columns}
 \end{frame}
