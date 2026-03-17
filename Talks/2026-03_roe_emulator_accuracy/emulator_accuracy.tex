@@ -149,28 +149,6 @@
     \end{columns}
 \end{frame}
 
-% ── 2c. REACH ─────────────────────────────────────────────────────────
-\begin{frame}{REACH}
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{itemize}
-                \item Dipole antenna based in the Karoo in South Africa
-                \item Goal is to measure the sky-averaged 21-cm signal
-                \item Collected around 350 hours of on sky data
-                \item Analysis pipeline heavily reliant on emulators for physical signal modelling
-                \item ...and soon instrument modelling
-                \item See talks from Eloy, Jacob and Sam later in the workshop
-            \end{itemize}
-        \end{column}
-        \hfill
-        \begin{column}{0.48\textwidth}
-            \vspace{1em}
-            \centering
-            \includegraphics[width=0.8\textwidth]{figs/reach.png}
-            \includegraphics[width=0.9\textwidth]{figs/21cmsignal.png}
-        \end{column}
-    \end{columns}
-\end{frame}
 % ── 3. The problem ────────────────────────────────────────────────────────────
 \begin{frame}{How accurate does an emulator need to be?}
     \begin{columns}[T]
@@ -288,25 +266,45 @@
 % ── Section divider ───────────────────────────────────────────────────────────
 \sectionframe{Application to sky-averaged 21-cm cosmology}
 
+% ── 2c. REACH ─────────────────────────────────────────────────────────
+\begin{frame}{REACH}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Dipole antenna based in the Karoo in South Africa
+                \item Goal is to measure the sky-averaged 21-cm signal
+                \item Collected around 350 hours of on sky data
+                \item Analysis pipeline heavily reliant on emulators for physical signal modelling
+                \item ...and soon instrument modelling
+                \item See talks from Eloy, Jacob and Sam later in the workshop
+            \end{itemize}
+        \end{column}
+        \hfill
+        \begin{column}{0.48\textwidth}
+            \vspace{1em}
+            \centering
+            \includegraphics[width=0.8\textwidth]{figs/reach.png}
+            \includegraphics[width=0.9\textwidth]{figs/21cmsignal.png}
+        \end{column}
+    \end{columns}
+\end{frame}
 % ── 7. 21-cm setup ────────────────────────────────────────────────────────────
 \begin{frame}{Sky-averaged 21-cm cosmology with ARES and globalemu}
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
             \begin{itemize}
-                \item 21-cm spin-flip signal from neutral hydrogen traces the
-                      \textbf{first stars and galaxies} ($z \sim 5$--$30$)
                 \item \textbf{ARES}: 1D radiative transfer code, $\sim$seconds per
                       evaluation, 8 free parameters
                 \item Modelling reionization, X-ray heating, star formation and
                         cosmology
                 \item \textbf{globalemu}: neural network emulator of ARES
                       (Bevins et al.\ 2021, MNRAS)
+                \item Total of around 10000 simulations for training, validation and testing
             \end{itemize}
         \end{column}
         \hfill
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.8\textwidth]{figs/21cmsignal.png}\\
             \includegraphics[width=0.75\textwidth]{figs/ares_validation_data.png}
         \end{column}
     \end{columns}
