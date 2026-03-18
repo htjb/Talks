@@ -9,6 +9,7 @@
 
 \documentclass[aspectratio=169, 12pt]{beamer}
 
+
 % ─── Fonts ────────────────────────────────────────────────────────────────────
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
@@ -50,9 +51,11 @@
 }
 \setbeamercolor{item}{fg=black}
 \setbeamercolor{subitem}{fg=black}
-\setbeamertemplate{itemize item}{\large$\bullet$}
+\setbeamertemplate{itemize item}{\small$\bullet$}
 \setbeamertemplate{itemize subitem}{--}
 \setlength{\leftmargini}{1.2em}
+\let\olditemize\itemize
+\renewcommand{\itemize}{\olditemize\setlength{\itemsep}{12pt}}
 
 % ─── Footer ───────────────────────────────────────────────────────────────────
 \setbeamertemplate{footline}{%
@@ -107,12 +110,12 @@
 % ── 2a. Why emulators? ─────────────────────────────────────────────────────────
 \begin{frame}{Emulators in astrophysics and cosmology}
     \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.55\textwidth}
+            \vspace{1em}
             \begin{itemize}
-                \item The main goal of what we do is to infer the nature of the Universe
+                \item Our goal is to infer the nature of the Universe from observations
                 \item This requires comparison of our observations $D$ to models $M(\theta)$
-                \item Detailed models take \textbf{minutes, hours or even days evaluate} per parameter set
-                      (e.g.\ 21-cm semi-numerical codes, CMB solvers, SED models)
+                \item Simulations take \textbf{minutes, hours or even days evaluate} per parameter set
                 \item Bayesian inference requires $10^4$--$10^6$ evaluations
             \end{itemize}
         \end{column}
@@ -129,19 +132,19 @@
 % ── 2b. Why emulators? ─────────────────────────────────────────────────────────
 \begin{frame}{Emulators in astrophysics and cosmology}
     \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{itemize}
-                \item Neural network \textbf{emulators} learn the mapping
-                      $\theta \mapsto M(\theta)$ from training data and evaluate in
-                      \textbf{milliseconds}
+                \item Look to Neural Networks to approximate our complex astrophysical models
+                \item Per parameter set run time goes from hours to
+                      \textit{milliseconds}
+                \item \textit{Previously infeasible inference becomes possible}
                 \item Used across the field: 21-cm, CMB, SED fitting, LSS, GWs \ldots
-                \item \textbf{Their role will only grow as we enter the era of big
-                    data astrophysics with the SKA, Vera C. Rubin etc.}
+                \item However emulators are \textit{an approximation}...
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.48\textwidth}
-            \vspace{1em}
+        \begin{column}{0.45\textwidth}
+            \vspace{3em}
             \centering
             \includegraphics[width=\textwidth]{figs/speculator.jpg}
             {\footnotesize \texttt{speculator} - Alsing et al. 1911.11778}
@@ -152,28 +155,24 @@
 % ── 3. The problem ────────────────────────────────────────────────────────────
 \begin{frame}{How accurate does an emulator need to be?}
     \begin{columns}[T]
-        \begin{column}{0.6\textwidth}
-            {\small
+        \begin{column}{0.56\textwidth}
+            \vspace{2em}
             \begin{itemize}
-                \item Typically measure accuracy in \textbf{signal space}:
+                \item Typically measure accuracy in \textit{signal space}:
                       \[
                           \mathrm{RMSE} = \sqrt{\frac{1}{N_d}\sum_i
                           \bigl(S_\mathrm{true} - S_\mathrm{pred}\bigr)^2}
                       \]
                 \item Rules of thumb to justify, e.g.\
                       ``$\mathrm{RMSE} \lesssim 0.1\sigma$''
-                \item But \textbf{what does this mean for the recovered posterior?}
-                \item We don't have access to the true posterior
-                      $P(\theta | D, M)$ -- only $P_\epsilon(\theta | D, M_\epsilon)$
-                \item We need a \textbf{principled, instrument-aware metric}
+                \item But \textit{what does this mean for the recovered posterior?}
             \end{itemize}
-            }
         \end{column}
         \hfill
-        \begin{column}{0.4\textwidth}
+        \begin{column}{0.5\textwidth}
             %\vspace{1em}
             \centering
-            \includegraphics[width=0.8\textwidth]{figs/globalemu-error.png}\\
+            \includegraphics[width=0.7\textwidth]{figs/globalemu-error.png}\\
             {\footnotesize \texttt{globalemu} - Bevins et al. 2104.04336}\\
             \includegraphics[width=0.7\textwidth]{figs/emulator-accuracy-21cmVAE.jpg}\\
             {\footnotesize \texttt{21cmVAE} - Bye et al. 2107.05581}
@@ -182,7 +181,7 @@
 \end{frame}
 
 % ── Section divider ───────────────────────────────────────────────────────────
-\sectionframe{A KL divergence bound on posterior accuracy\\\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
+\sectionframe{Posterior accuracy\\\href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}}
 
 % ── 4a. Setting up ─────────────────────────────────────────────────────────────
 \begin{frame}{Emulator error propagates into the posterior}
@@ -198,7 +197,7 @@
                   {\int L\,\pi\,e^{\delta \log L}\,d\theta}
               \]
         \item A natural measure of the difference is the
-              \textbf{Kullback--Leibler divergence}:
+              \textit{Kullback--Leibler divergence}:
               \[
                   \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
                   = \int P \log\!\left(\frac{P}{P_\epsilon}\right) d\theta
@@ -208,29 +207,28 @@
 
 % ── 4b. Setting up ─────────────────────────────────────────────────────────────
 \begin{frame}{Emulator error propagates into the posterior}
-    \begin{itemize}
-        \item \textbf{Kullback--Leibler divergence}:
-              \[
+            \[
                   \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
                   = \int P \log\!\left(\frac{P}{P_\epsilon}\right) d\theta
               \]
-        \item This quantifies the \textbf{incorrect information inferred} (in nats)
-              when using the emulator --- we want $\mathcal{D}_\mathrm{KL} < 1$
-        \item Problem: we don't have access to $P$ to evaluate this directly \ldots
+    \begin{itemize}
+        \item This quantifies the \textit{incorrect information inferred} (in nats)
+              when using the emulator
+        \item We don't have access to $P$ to evaluate this directly \ldots
+        \item \ldots but we can make some progress with a few assumptions
     \end{itemize}
 \end{frame}
 % ── 5. Main result ────────────────────────────────────────────────────────────
 \begin{frame}{A theoretically motivated upper bound}
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
-            Under three assumptions:
             \begin{itemize}
-                \item \textbf{Gaussian likelihood} and broad uniform prior
-                \item \textbf{Linear model} around the posterior peak (similar to a Laplace approximation)
-                \item \textbf{White (uncorrelated) noise} in the data
+                \item \textit{Gaussian likelihood} and broad uniform prior
+                \item \textit{Linear model} around the posterior peak
+                \item \textit{Linear and slowly varying} emulator error
+                \item \textit{Uncorrelated noise} in the data
             \end{itemize}
             \vspace{0.2em}
-            \ldots analytically:
             \[
                 \boxed{
                     \mathcal{D}_\mathrm{KL}(P \| P_\epsilon)
@@ -243,6 +241,7 @@
         \begin{column}{0.5\textwidth}
             \vspace{2em}
             \centering
+            {\small For 21-cm Cosmology...}
             \includegraphics[width=\textwidth]{figs/kl_divergence-illustration.png}
         \end{column}
     \end{columns}
@@ -251,15 +250,13 @@
 % ── 6. What this gives us ─────────────────────────────────────────────────────
 \begin{frame}{Why this bound is useful}
     \begin{itemize}
-        \item \textbf{Instrument-aware}: the required emulator accuracy scales with the
+        \item \textit{Instrument-aware}: the required emulator accuracy scales with the
               noise -- better instruments demand more accurate emulators
-        \item \textbf{Predictive}: given an emualtor with a given accuracy, how
+        \item \textit{Predictive}: given an emulator with a given accuracy, how
               accurate can I expect my posteriors to be? 
-        \item \textbf{Can be inverted}: given a target posterior accuracy and noise
-              level, compute the required RMSE \emph{before} running inference
-        \item \textbf{Loss function / hyperparameter tuning}: optimise emulator
+        \item \textit{Loss function / hyperparameter tuning}: optimise emulator
               training to minimise the bound directly, instrument by instrument
-        \item \textbf{Broadly applicable}: SKA data analysis, SED fitting, CMB, \ldots
+        \item \textit{Broadly applicable}: SKA data analysis, SED fitting, CMB, \ldots
     \end{itemize}
 \end{frame}
 
@@ -267,15 +264,14 @@
 \sectionframe{Application to sky-averaged 21-cm cosmology}
 
 % ── 2c. REACH ─────────────────────────────────────────────────────────
-\begin{frame}{REACH}
+\begin{frame}{REACH -- \href{https://arxiv.org/abs/2210.07409}{2210.07409}}
     \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.55\textwidth}
+            \vspace{1em}
             \begin{itemize}
                 \item Dipole antenna based in the Karoo in South Africa
-                \item Goal is to measure the sky-averaged 21-cm signal
-                \item Collected around 350 hours of on sky data
+                \item Goal is to measure the sky-averaged 21-cm signal from neutral hydrogen
                 \item Analysis pipeline heavily reliant on emulators for physical signal modelling
-                \item ...and soon instrument modelling
                 \item See talks from Eloy, Jacob and Sam later in the workshop
             \end{itemize}
         \end{column}
@@ -283,29 +279,30 @@
         \begin{column}{0.48\textwidth}
             \vspace{1em}
             \centering
-            \includegraphics[width=0.8\textwidth]{figs/reach.png}
-            \includegraphics[width=0.9\textwidth]{figs/21cmsignal.png}
+            \includegraphics[width=0.7\textwidth]{figs/reach.png}
+            \includegraphics[width=0.75\textwidth]{figs/21cmsignal.png}
         \end{column}
     \end{columns}
 \end{frame}
 % ── 7. 21-cm setup ────────────────────────────────────────────────────────────
 \begin{frame}{Sky-averaged 21-cm cosmology with ARES and globalemu}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.5\textwidth}
             \begin{itemize}
-                \item \textbf{ARES}: 1D radiative transfer code, $\sim$seconds per
-                      evaluation, 8 free parameters
-                \item Modelling reionization, X-ray heating, star formation and
-                        cosmology
-                \item \textbf{globalemu}: neural network emulator of ARES
+                \item \textit{ARES}: 1D radiative transfer code, $\sim$seconds per
+                      evaluation
+                \item \textit{globalemu}: neural network emulator of ARES
                       (Bevins et al.\ 2021, MNRAS)
-                \item Total of around 10000 simulations for training, validation and testing
+                \item Total of around 10,000 simulations for training, validation and testing
+                \item 8 free parameters modelling reionization, X-ray heating, star formation and
+                        cosmology
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=0.75\textwidth]{figs/ares_validation_data.png}
+            \includegraphics[width=0.5\linewidth]{figs/globalemu.png}
+            \includegraphics[width=0.65\textwidth]{figs/ares_validation_data.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -324,35 +321,43 @@
 % ── 10. Posterior recovery ────────────────────────────────────────────────────
 \begin{frame}{Posterior recovery: ARES vs globalemu}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.53\textwidth}
             \begin{itemize}
                 \item Inference with \textsc{PolyChord} on mock data at
                       $\sigma = 5,\,25,\,50,\,250\,\mathrm{mK}$
-                \item Direct comparison: posteriors from \textbf{ARES} (blue)
-                      vs \textbf{globalemu} (orange)
-                \item Posteriors agree \textbf{very well} down to $\sigma = 5\,\mathrm{mK}$
-                \item Mean RMSE $\approx 20\%$ of noise and still
-                      $\mathcal{D}_\mathrm{KL} \ll 1$
-                \item Emulators are \textbf{trustworthy} tools for inference
-                      when the bound is satisfied
+                \item Direct comparison: posteriors from \textit{ARES} (blue)
+                      vs \textit{globalemu} (orange)
+                \item Posteriors agree \textit{very well} down to $\sigma = 5\,\mathrm{mK}$
+                \item Estimate the KL divergence between the two distributions at different noise levels
             \end{itemize}
         \end{column}
-        \hfill
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
-            {\tiny $\sigma = 25\,\mathrm{mK}$}\\[0.1em]
+            \vspace{-0.5em}
+            {\tiny $\sigma = 25\,\mathrm{mK}$}
+            \includegraphics[width=0.95\textwidth]{figs/posterior_ares_fiducial_model_noise_25_ARES_True_FIXED_NOISE_True.png}
         \end{column}
     \end{columns}
 \end{frame}
 
 % ── 9. KL divergence in practice ──────────────────────────────────────────────
 \begin{frame}{KL divergence bound vs observed accuracy}
-    \begin{itemize}
-        \item \textbf{Red markers}: measured $\mathcal{D}_\mathrm{KL}$
-              from our runs (via normalising flows, \href{https://github.com/htjb/margarine}{\textsc{margarine}})
-    \end{itemize}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{figs/kl_divergence-illustration.png}
+    \end{center}
     \vfill
+\end{frame}
+
+% ── 9. KL divergence in practice ──────────────────────────────────────────────
+\begin{frame}{KL divergence bound vs observed accuracy}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{figs/kl_divergence_rmse_only.png}
+    \end{center}
+    \vfill
+\end{frame}
+
+% ── 9. KL divergence in practice ──────────────────────────────────────────────
+\begin{frame}{KL divergence bound vs observed accuracy}
     \begin{center}
         \includegraphics[width=0.7\textwidth]{figs/kl_divergence.png}
     \end{center}
@@ -363,8 +368,7 @@
 % ── 11. astroemu ────────────────────────────────────────────────────
 \begin{frame}{\textsc{astroemu}}
     \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
-            \vspace{2em}
+        \begin{column}{0.52\textwidth}
             \begin{itemize}
                 \item Written in JAX with JAX native dataloaders
                 \item Tilling approach to emulation inspired by \textsc{globalemu}
@@ -377,7 +381,7 @@
         \hfill
         \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=\textwidth, height=4.2cm, keepaspectratio]{figs/globalemu.png}\\[0.5em]
+            \includegraphics[width=\textwidth, height=4.cm, keepaspectratio]{figs/globalemu.png}\\[0.5em]
             \begin{minipage}{0.49\textwidth}
                 \centering
                 \includegraphics[width=\textwidth]{figs/hyrec_percent_error_tk.png}
@@ -397,22 +401,19 @@
         \begin{column}{0.6\textwidth}
             \begin{itemize}
                 \item Upper bound:
-                      $\;\mathcal{D}_\mathrm{KL} \leq \frac{N_d}{2}\!\left(\frac{\mathrm{RMSE}}{\sigma}\right)^{\!2}$
-                \item \textbf{Instrument-aware}: better instruments need
+                      $\;\mathcal{D}_\mathrm{KL} (P || P_\epsilon) \leq \frac{N_d}{2}\!\left(\frac{\mathrm{RMSE}}{\sigma}\right)^{\!2}$
+                \item \textit{Instrument-aware}: better instruments need
                       more accurate emulators
                 \item Need to address the assumptions we made and see if this can be generalised
-                \item \textbf{Global 21-cm}: accurate posteriors recovered
-                      even at $\mathrm{RMSE} \approx 20\%$ of the noise
-                \item \textbf{Broadly applicable}: any field beyond 21-cm using emulators e.g. SKA, CMB, SED fitting, \ldots
-                \item Plan to demonstrate this with \textsc{astroemu}
+                \item \textit{Broadly applicable}: any field beyond 21-cm using emulators e.g. SKA, CMB, SED fitting, \ldots
             \end{itemize}
         \end{column}
         \hfill
         \begin{column}{0.5\textwidth}
             \centering
-            {\small\textbf{Published in MNRAS}\\[0.2em]
+            {\small\textit{Published in MNRAS}\\[0.2em]
             \href{https://arxiv.org/abs/2503.13263}{arXiv:2503.13263}\\[0.4em]
-            \textbf{Code:}\\
+            \textit{Code:}\\
             \href{https://github.com/htjb/validating_posteriors}%
             {\small github.com/htjb/validating\_posteriors}\\[0.5em]
             \href{https://github.com/htjb/globalemu}%
@@ -457,15 +458,15 @@
 % ── B2. Limitations ───────────────────────────────────────────────────────────
 \begin{frame}{Limitations of the approximation}
     \begin{itemize}
-        \item Assumes \textbf{linearity} of the model around the posterior peak --
+        \item Assumes \textit{linearity} of the model around the posterior peak --
               may break down in high dimensions or highly curved posteriors
-        \item Assumes \textbf{Gaussian likelihood} -- may not hold for all
+        \item Assumes \textit{Gaussian likelihood} -- may not hold for all
               instruments or data preprocessing choices
-        \item Assumes \textbf{uncorrelated (white) noise} -- extension to
+        \item Assumes \textit{uncorrelated (white) noise} -- extension to
               correlated noise is straightforward if $\Sigma$ is known
-        \item The bound is \textbf{conservative}: measured
+        \item The bound is \textit{conservative}: measured
               $\mathcal{D}_\mathrm{KL}$ values are typically well below the bound
-        \item Applies most directly to posteriors that are \textbf{unimodal and
+        \item Applies most directly to posteriors that are \textit{unimodal and
               approximately Gaussian} -- multimodal cases warrant extra care
     \end{itemize}
 \end{frame}
