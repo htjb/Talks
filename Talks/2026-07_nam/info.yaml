@@ -1,0 +1,7 @@
+type: talk
+date: "2026-07"
+event: "National Astronomy Meeting 2026"
+location: "University of Birmingham, UK"
+talks:
+  - title: "Revealing the Cosmic Dark Ages from lunar orbit with CosmoCube"
+  - title: "Understanding the impact of emulators in our inference pipelines"

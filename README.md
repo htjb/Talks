@@ -1,5 +1,15 @@
 # Talks
 
+1. Revealing the Cosmic Dark Ages from lunar orbit with CosmoCube
+    - National Astronomy Meeting 2026
+    - University of Birmingham, UK
+    - July 2026
+
+1. Understanding the impact of emulators in our inference pipelines
+    - National Astronomy Meeting 2026
+    - University of Birmingham, UK
+    - July 2026
+
 1. Understanding the impact of emulators in our inference pipelines
     - AI in Radio Astronomy Workshop: Preparing the UK for the SKA Data Future
     - Royal Observatory Edinburgh, Edinburgh
@@ -305,6 +315,11 @@
     - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
 
 # Posters
+
+1. Surrogate modelling for the REACH beam pattern for robust 21-cm signal extraction
+    - National Astronomy Meeting 2026
+    - University of Birmingham, UK
+    - July 2026
 
 1. globalemu: A novel and robust approach for emulating the sky averaged 21-cm signal from the cosmic dawn and epoch of reionization
     - A Precursor View of the SKA Sky
