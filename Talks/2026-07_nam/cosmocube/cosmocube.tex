@@ -155,20 +155,17 @@
 % Introduce the science of the dark ages... 
 \begin{frame}{The Sky Averaged 21-cm Signal}
     \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.55\textwidth}
             \begin{itemize}
-                \item Bullet pointing to the figure on the right
-                \item Another bullet point
-                \item And another one
-                \item Sub-item example:
-                      \begin{itemize}
-                          \item Sub-point one
-                          \item Sub-point two
-                      \end{itemize}
+                \item Arises from the spin flip transition in neutral hydrogen
+                \item Statistical temperature which quantifies the number of atoms in each state
+                \item Measure this temperature relative to the CMB over cosmological time
+                \item Transition driven by CMB photons, collisions between atoms and eventually astrophysics
+                \item The dark ages is purely cosmology
             \end{itemize}
         \end{column}
         \hfill
-        \begin{column}{0.48\textwidth}
+        \begin{column}{0.4\textwidth}
             \centering
             \includegraphics[width=\textwidth]{example-image}  % replace with figure
             \\[0.3em]
@@ -179,24 +176,16 @@
 
 % How does the signal vary with cosmological parameters... 
 \begin{frame}{$\Lambda$-CDM Cosmology}
-    \begin{columns}[T]
-        \begin{column}{0.30\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image-a}
-        \end{column}
-        \begin{column}{0.30\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image-b}
-        \end{column}
-        \begin{column}{0.30\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image-c}
-        \end{column}
-    \end{columns}
+    \includegraphics[width=0.99\linewidth]{figs/vary_cosmology.png}
     \vspace{0.5em}
-    \begin{itemize}
-        \item A note about the figures above
-    \end{itemize}
+    \centering
+    {\footnotesize Using \texttt{hyprfine} code to exploe how the 21-cm signal varies around a fiducial Planck Cosmology. See \url{https://github.com/htjb/hyprfine}.}
+\end{frame}
+
+% How does the signal vary with cosmological parameters... 
+\begin{frame}{$\Lambda$-CDM Cosmology}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figs/h_omegab_constraints_noise_comparison.png}
 \end{frame}
 
 %  Beyond lambda CDM
@@ -204,21 +193,20 @@
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{example-image-a}
+            \includegraphics[width=\textwidth]{figs/Munoz-et-al.png}
+            {\footnotesize Munoz et al. PRD 2015 \\ \begin{itemize} \item DM-Baryon Interactions \end{itemize}}
         \end{column}
         \begin{column}{0.30\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{example-image-b}
+            \includegraphics[width=\textwidth]{figs/Okamatsu-et-al.png}
+            {\footnotesize Okamatsu et al. PRL 2024 \\ \begin{itemize} \item DM decay \item EDE \item Excess Radio Background \end{itemize}}
         \end{column}
-        \begin{column}{0.30\textwidth}
+        \begin{column}{0.35\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{example-image-c}
+            \includegraphics[width=\textwidth]{figs/Yoshiura-et-al.png}
+            {\footnotesize Yoshiura et al. 2026 \begin{itemize} \item Primordial Magnetic Fields \end{itemize}}
         \end{column}
     \end{columns}
-    \vspace{0.5em}
-    \begin{itemize}
-        \item A note about the figures above
-    \end{itemize}
 \end{frame}
 
 \sectionframe{Lunar orbit, CosmoCube and the race back to the Moon}
@@ -329,28 +317,9 @@
 \end{frame}
 
 % Payload
-\begin{frame}{The Payload}
-    \begin{columns}[T]
-        \begin{column}{0.48\textwidth}
-            \begin{itemize}
-                \item Bullet pointing to the figure on the right
-                \item Another bullet point
-                \item And another one
-                \item Sub-item example:
-                      \begin{itemize}
-                          \item Sub-point one
-                          \item Sub-point two
-                      \end{itemize}
-            \end{itemize}
-        \end{column}
-        \hfill
-        \begin{column}{0.48\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image}  % replace with figure
-            \\[0.3em]
-            {\small Optional caption text}
-        \end{column}
-    \end{columns}
+\begin{frame}{The Payload} 
+    \centering
+    \includegraphics[width=\textwidth]{figs/CosmoCube_diagram.pdf}
 \end{frame}
 
 % Funding and status 
@@ -371,7 +340,7 @@
         \hfill
         \begin{column}{0.48\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{example-image}  % replace with figure
+            \includegraphics[width=\textwidth]{figs/cosmocube-lifecycle.pdf}  % replace with figure
             \\[0.3em]
             {\small Optional caption text}
         \end{column}
