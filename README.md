@@ -320,7 +320,7 @@
 1. Surrogate modelling for the REACH beam pattern for robust 21-cm signal extraction
     - National Astronomy Meeting 2026
     - University of Birmingham, UK
-    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/2026-07_nam/Bevins.pdf)
+    - [PDF](https://github.com/htjb/Talks/raw/master/Posters/2026-07_nam/BEVINS.pdf)
     - July 2026
 
 1. globalemu: A novel and robust approach for emulating the sky averaged 21-cm signal from the cosmic dawn and epoch of reionization
