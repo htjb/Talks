@@ -9,6 +9,7 @@
 1. Understanding the impact of emulators in our inference pipelines
     - National Astronomy Meeting 2026
     - University of Birmingham, UK
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-07_nam/emulators/emulators.pdf)
     - July 2026
 
 1. Understanding the impact of emulators in our inference pipelines
@@ -312,8 +313,8 @@
     - Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks.
     - Faculty Job Application
     - Cavendish Physics, University of Cambridge
-    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/hamiltons-principle/Lecture.pdf)
-    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/hamiltons-principle)
+    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/Hamiltons-Principle/Lecture.pdf)
+    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
 
 # Posters
 
