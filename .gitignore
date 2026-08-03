@@ -2,4 +2,12 @@
 **simulations/
 Lectures/Hamiltons-Principle/free-particle-paths/
 Lectures/Hamiltons-Principle/gravity/
-
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.nav
+**/*.out
+**/*.snm
+**/*.synctex.gz
+**/*.toc
