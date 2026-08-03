@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}[margins=2cm]
+
+\title{Hamilton's Principle}
+%\subtitle{Classical Dynamics}
+\author{Dr Harry Bevins}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+In this lecture we will introduce Hamilton's Principle, the Lagrangian and the Action. We will use Hamilton's Principle to derive Newton's first and second laws of motion as well as his law of gravity. 
+
+Hamilton's Principle states that 
+
+\begin{quotation}
+    The path followed by a particle moving in a potential field will extremise the action.
+\end{quotation}
+
+\section{The Lagrangian and the Action}
+
+The Lagrangian for a particle is given by
+\begin{equation}
+L(x, \dot{x}, t) = T(\dot{x}) - V(x, t),
+\end{equation}
+where $x$ is the spatial coordinates of the particle, $\dot{x}$ is the time derivative of the position of the particle i.e. velocity, $t$ is time, $T(\dot{x})$ is the kinetic energy of the particle and $V(x, t)$ is the potential field in time and space.
+
+
+The action captures the balance between kinetic energy and potential energy and effectively quantifies the cost of travelling along a path between two points. This can be seen if one thinks of the Lagrangian as the price paid for motion in a potential field ($L = T - V$) at a fixed time and the action as an average of this cost over time
+\begin{equation}
+    S = (t_1 - t_0) \langle L \rangle_t.
+\end{equation}
+Hamilton's principle can then be rephrased to
+\begin{quote}
+    Particles travelling in a potential between two different points in time and space will take the most energy efficient path possible.
+\end{quote}
+
+\section{The Euler-Lagrange equation}
+
+We can use the Lagrangian, the Action and Hamilton's principle to derive the Euler-Lagrange equation which allows one to investigate the dynamics of different systems. In this section we will derive the Euler-Lagrange equation and in the following section demonstrate how it can help us understand how systems evolve over time.
+
+If we start with the definition of the action of a particle
+\begin{equation}
+    S[x(t)] = \int_{t_0}^{t_1} L(x, \dot{x}, t) dt,
+\end{equation}
+and consider what happens when we vary the path taken by our particle such that $x(t) \rightarrow x(t) + \epsilon \eta(t)$ where $\epsilon$ is small and $\eta(t_0) = \eta(t_1) = 0$ (i.e. any variation vanishes at the end points of the wiggles) then
+\begin{equation}
+    S[x(t)] = \int_{t_0}^{t_1} L(x + \epsilon \eta, \dot{x} + \epsilon \dot{\eta}, t) dt.
+\end{equation}
+The condition of stationarity implied by Hamilton's principle suggests
+\begin{equation}
+    \frac{dS}{d\epsilon} \bigg|_{\epsilon = 0} = 0,
+\end{equation}
+and
+\begin{equation}
+    \frac{dS}{d\epsilon} \bigg|_{\epsilon = 0} = \int_{t_0}^{t_1} \frac{\delta L}{\delta x}\frac{\delta (x + \epsilon \eta)}{\delta \epsilon} + \frac{dL}{\delta \dot{x}}\frac{\delta (\dot{x} + \epsilon \dot{\eta})}{\delta \epsilon} dt = 0,
+\end{equation}
+which can be written as
+\begin{equation}
+    \frac{dS}{\delta \epsilon} \bigg|_{\epsilon = 0} = \int_{t_0}^{t_1} \frac{\delta L}{\delta x}\eta + \frac{\delta L}{\delta \dot{x}}\dot{\eta} dt = 0.
+    \label{eq:pre-integration-by-parts}
+\end{equation}
+Looking now at the second term in the integrand we can use integration by parts
+\begin{equation}
+    \int u dv = uv - \int v du
+\end{equation}
+to say
+\begin{equation}
+    \begin{aligned}
+        u & = \frac{\delta L}{\delta \dot{x}} \\
+        dv & = \dot{\eta} dt \\ 
+        du &= \frac{d}{dt} \bigg( \frac{\delta L}{\delta \dot{x}} \bigg) dt \\
+        v & = \eta \\
+        \int_{t_0}^{t_1} \frac{\delta L}{\delta \dot{x}}\dot{\eta} dt & = \bigg[ \frac{\delta L}{\delta \dot{x}}\eta\bigg]^{t_1}_{t_0} - \int_{t_0}^{t_1} \frac{d}{dt}\bigg(\frac{\delta L}{\delta \dot{x}}\bigg) \eta dt.
+    \end{aligned}
+\end{equation}
+The first term in the equation above disappears because $\eta(t_0) = \eta(t_1) = 0$ and so substituting the last term back into Eq. \ref{eq:pre-integration-by-parts} we end up with
+\begin{equation}
+    \frac{dS}{\delta \epsilon} \bigg|_{\epsilon = 0} = \int_{t_0}^{t_1} \bigg(\frac{\delta L}{\delta x} - \frac{d}{dt}\bigg(\frac{\delta L}{\delta \dot{x}}\bigg)\bigg) \eta dt = 0.
+    \label{eq:pre-integration-by-parts}
+\end{equation}
+Since $\eta$ an arbritrary perturbation in the path the only way for this to be 0 is for
+\begin{equation}
+    \boxed{\frac{d}{dt}\frac{\delta L}{\delta \dot{x}} - \frac{\delta L}{\delta x} = 0.}
+\end{equation}
+This is known as the Euler-Lagrange equation and from it, we can derive Newton's laws of motion and gravity. \textcolor{red}{are there pther applicaitons??}
+
+\section{Examples}
+
+\subsection{Free Particle}
+
+For a free particle moving with some kinetic energy in $V(x, t) = 0$ the lagrangian is given by
+\begin{equation}
+    L = \frac{1}{2} m \dot{x}^2
+\end{equation}
+which using the Euler-Lagrange equation implies
+
+\begin{equation}
+\begin{aligned}
+    \frac{d}{dt}\frac{\delta}{\delta \dot{x}} (\frac{1}{2} m \dot{x}^2) - \frac{\delta}{\delta x} (\frac{1}{2} m \dot{x}^2) & = 0 \\
+    \frac{d}{dt} (m \dot{x}) & = 0 \\
+    m \ddot{x} & = 0
+\end{aligned}
+\end{equation}
+
+This is Newton's first law of motion i.e. that a particle in motion or at rest will stay in motion at the same velocity unless it is acted upon by an external force.
+
+\subsection{Newton's Second Law}
+
+Newton's second law of motion states that the force acting on an object is equal to its mass times its acceleration squared
+\begin{equation}
+    F = ma.
+\end{equation}
+
+It can be derived using the Euler-Lagrange equation. We define the Lagrangian as
+\begin{equation}
+    L = \frac{1}{2} m \dot{x}^2 - V(x),
+\end{equation}
+where $V$ is some arbritrary potential. Remembering that the Euler-Lagrange equation is given by
+\begin{equation}
+    \frac{d}{dt}\frac{\delta L}{\delta \dot{x}} - \frac{\delta L}{\delta x} = 0,
+\end{equation}
+we have
+\begin{equation}
+    \begin{aligned}
+    \frac{d}{dt}\frac{\delta }{\delta \dot{x}} (\frac{1}{2} m \dot{x}^2 - V(x)) - \frac{\delta }{\delta x} (\frac{1}{2} m \dot{x}^2 - V(x)) & = 0 \\
+    \frac{d}{dt} m\dot{x} + \frac{\delta V}{\delta x} & = 0 \\
+    m \ddot{x} & = - \frac{\delta V}{\delta {x}} \\
+    m \ddot{x} & = F
+    \end{aligned}
+\end{equation}
+Thus we see then that the path that extremises the action satisfies Newton's second law.
+
+\subsection{Newton's Law of Gravity}
+
+In this final example we will show that you can derive Newton's Law of Gravitation with the Euler-Lagrange equation. For a particle travelling in a gravitational field the Lagrangian is given by 
+\begin{equation}
+    L = \frac{1}{2} m \dot{r}^2 - \frac{G M m}{r},
+\end{equation}
+where $r$ is the position of our particle with mass $m$ relative to the attracting body with mass $M$ and $G$ is Newton's gravitational constant. Note that $r$ is a radial vector. Substituting this into the Euler-Lagrange equation
+\begin{equation}
+    \frac{d}{dt}\frac{\delta L}{\delta \dot{r}} - \frac{\delta L}{\delta r} = 0,
+\end{equation}
+we have
+\begin{equation}
+    \begin{aligned}
+    \frac{d}{dt}\frac{\delta }{\delta \dot{r}} (\frac{1}{2} m \dot{r}^2 - \frac{GMm}{r}) - \frac{\delta }{\delta r} (\frac{1}{2} m \dot{r}^2 - \frac{GMm}{r}) & = 0 \\
+    \frac{d}{dt} m\dot{r} - \frac{GMm}{r^2} & = 0 \\
+    m \ddot{r} & = \frac{GMm}{r^2}. \\
+    \end{aligned}
+\end{equation}
+In other words the acceleration experienced by a particle in a gravitational field is $\ddot{r} \propto \frac{1}{r^2}$ corresponding to circular motion. So we see that the path that extremises the action in a gravitational field is a circular orbit.
+
+\section{The outlook}
+
+Lagrangian mechanics and Hamilton's principle is a powerful tool from which you can derive a huge range of physical phenomena. Hamilton's principle and the Euler-Lagrange equation are the gateway to modern physics and you will encounter the Euler-Lagrange equation a lot during your degrees and beyond. Provided you can write down a lagrangian or define your action you can do lots of exciting things like derive Maxwell's equations for electromagnetism (\textcolor{red}{lecture course}), Einstein's equations of general relativity (\textcolor{red}{lecture course}) and derive the fundamental equations of quantum field theory (\textcolor{red}{lecture course}). 
+
+\end{document}
