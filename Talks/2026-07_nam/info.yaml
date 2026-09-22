@@ -7,3 +7,5 @@ talks:
     invited: false
     pdf: "cosmocube/CosmoCube.pdf"
   - title: "Understanding the impact of emulators in our inference pipelines"
+    invited: false
+    pdf: "emulators/emulators.pdf"
