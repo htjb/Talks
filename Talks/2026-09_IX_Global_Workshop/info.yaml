@@ -1,0 +1,8 @@
+type: talk
+date: "2026-09"
+event: "IX Global Workshop 2026"
+location: "University of Malta, Malta"
+talks:
+  - title: "Emulating the REACH dipole beam pattern"
+    invited: false
+    pdf: "bevins_beam_emulation.pdf"

@@ -1,5 +1,23 @@
 # Talks
 
+1. Emulating the REACH dipole beam pattern
+    - REACH Annual Meeting 2026
+    - University of Malta, Malta
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-09_REACH_AGM_Malta/bevins_beam_emulation.pdf)
+    - September 2026
+
+1. Revealing the first stars and galaxies
+    - IX Induction Day
+    - Imperial College London, IX Center for AI in Science, UK
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-09_IX_introductions/Harry_Bevins.pdf)
+    - September 2026
+
+1. Emulating the REACH dipole beam pattern
+    - IX Global Workshop 2026
+    - University of Malta, Malta
+    - [PDF](https://github.com/htjb/Talks/raw/master/Talks/2026-09_IX_Global_Workshop/bevins_beam_emulation.pdf)
+    - September 2026
+
 1. Revealing the Cosmic Dark Ages from lunar orbit with CosmoCube
     - National Astronomy Meeting 2026
     - University of Birmingham, UK
