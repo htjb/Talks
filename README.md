@@ -331,8 +331,8 @@
     - Teaching Lecture for Faculty Job at Cavendish Physics, University of Cambridge. Additional material includes lecture notes, problem sheet and Python notebooks.
     - Faculty Job Application
     - Cavendish Physics, University of Cambridge
-    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/Hamiltons-Principle/Lecture.pdf)
-    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/Hamiltons-Principle)
+    - [Lecture](https://github.com/htjb/Talks/raw/master/Lectures/hamiltons-principle/Lecture.pdf)
+    - [Additional Material](https://github.com/htjb/Talks/tree/master/Lectures/hamiltons-principle)
 
 # Posters
 
